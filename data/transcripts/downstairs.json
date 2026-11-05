@@ -1,0 +1,54 @@
+{
+ "language": "en",
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 20.66,
+   "text": "watched....",
+   "no_speech_prob": 0.0
+  },
+  {
+   "start": 20.66,
+   "end": 29.96,
+   "text": "wow",
+   "no_speech_prob": 0.0
+  },
+  {
+   "start": 29.96,
+   "end": 40.06,
+   "text": "Hollowadora",
+   "no_speech_prob": 0.0
+  },
+  {
+   "start": 40.06,
+   "end": 45.66,
+   "text": "Hop openingerc\ud488",
+   "no_speech_prob": 0.0
+  },
+  {
+   "start": 60.3,
+   "end": 62.66,
+   "text": "Really Ferrell",
+   "no_speech_prob": 0.0
+  },
+  {
+   "start": 62.66,
+   "end": 92.64,
+   "text": "Post Nachance",
+   "no_speech_prob": 0.0
+  },
+  {
+   "start": 92.66,
+   "end": 118.0,
+   "text": "Book Sports",
+   "no_speech_prob": 0.0
+  },
+  {
+   "start": 118.0,
+   "end": 120.0,
+   "text": "\u0415 ions",
+   "no_speech_prob": 0.0
+  }
+ ],
+ "assessment": "No intelligible speech or announcements. Whisper output is hallucinated filler over crowd murmur and background music (30 s windows, repeated phrases). Treat audio as ambience only."
+}

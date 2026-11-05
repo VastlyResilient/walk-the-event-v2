@@ -1,0 +1,5 @@
+{
+  "_doc": "Face blur. \"all_faces\": true blurs every guest face on both floors (owner request, Nov 2026): run `python pipeline/face_track.py detect <floor>`, `pose <floor>`, `track <floor>` (needs onnxruntime + pipeline/models/), then `python pipeline/encode_walk.py <floor>`; the tracked, smoothed ellipses in pipeline/faces/<floor>_tracks.json are blurred into the colour panel only. \"segments\": extra {floor, start_s, end_s, note} ranges for the old per-segment Haar blur (use if anyone asks to be removed and a face was missed).",
+  "all_faces": true,
+  "segments": []
+}

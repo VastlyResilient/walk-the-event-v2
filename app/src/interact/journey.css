@@ -1,0 +1,109 @@
+/* ================= Hermes Journey ================= */
+.ix .jr { background: #04061c; --jr-title: 'Rye', var(--serif); }
+.jr-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; cursor: grab; }
+.jr-canvas:active { cursor: grabbing; }
+
+/* the touch display: a thin bezel between the shell's header and dock, with its "TOUCH DISPLAY" plaque */
+.jr-bezel { position: absolute; z-index: 1; left: 8px; right: 8px; top: 8px; bottom: 80px; border-radius: 14px; pointer-events: none; border: 1px solid rgba(160, 170, 255, 0.16); box-shadow: inset 0 0 40px rgba(40, 50, 200, 0.18), 0 0 0 100vmax rgba(2, 3, 12, 0.42); }
+.jr-plaque { position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 50%); padding: 3px 10px; border-radius: 3px; background: rgba(232, 234, 255, 0.9); color: #1d2040; font: 700 8.5px var(--sans); letter-spacing: 0.22em; text-transform: uppercase; white-space: nowrap; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); }
+.jr-tiny .jr-plaque { font-size: 7.5px; padding: 2px 8px; }
+
+/* on-screen heading: brand top left, the screen's sentence, and (opened) the orbit's name + counts centred */
+.jr-hud { position: absolute; z-index: 3; left: 22px; right: 22px; top: 18px; pointer-events: none; display: grid; grid-template-columns: auto 1fr; gap: 6px 20px; align-items: start; }
+.jr-brand { display: flex; flex-direction: column; gap: 2px; }
+.jr-brand small { font: 800 8.5px var(--sans); letter-spacing: 0.34em; text-transform: uppercase; color: rgba(225, 230, 255, 0.8); }
+.jr-brand b { font-family: var(--jr-title); font-weight: 400; font-size: 21px; line-height: 1; letter-spacing: 0.02em; color: #eef0ff; text-transform: uppercase; text-shadow: 0 0 16px rgba(120, 140, 255, 0.55); white-space: nowrap; }
+.jr-head { min-width: 0; text-align: center; padding-right: 150px; display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.jr-cap { margin: 0; font-family: var(--serif); font-size: 17px; line-height: 1.2; color: #f1f2ff; text-shadow: 0 1px 10px rgba(0, 0, 20, 0.8); max-width: 34em; }
+.jr-note { margin: 0; font-size: 10px; line-height: 1.35; color: rgba(210, 215, 255, 0.5); font-weight: 600; max-width: 44em; transition: opacity 0.4s; }
+.jr.open .jr-note { display: none; }
+.jr-orbit { display: none; flex-direction: column; align-items: center; gap: 2px; margin-top: 4px; }
+.jr.open .jr-orbit { display: flex; animation: jr-rise 0.5s var(--ease) both; }
+@keyframes jr-rise { from { opacity: 0; transform: translateY(6px); } }
+.jr-name { margin: 0; font-family: var(--jr-title); font-weight: 400; font-size: 34px; line-height: 1; letter-spacing: 0.03em; color: #fff; text-shadow: 0 0 22px var(--c), 0 0 3px var(--c); }
+.jr-counts { font: 800 10px var(--sans); letter-spacing: 0.24em; text-transform: uppercase; color: rgba(235, 238, 255, 0.92); }
+.jr-prog { font: 600 10.5px var(--sans); color: rgba(210, 215, 255, 0.6); letter-spacing: 0.02em; }
+
+.jr-narrow .jr-hud { grid-template-columns: 1fr; left: 18px; right: 18px; }
+.jr-narrow .jr-brand { padding-right: 46px; }
+.jr-narrow .jr-head { text-align: left; align-items: flex-start; padding-right: 0; }
+.jr-narrow .jr-cap { font-size: 14px; }
+.jr-narrow .jr-orbit { align-self: stretch; }
+.jr-narrow .jr-name { font-size: 28px; }
+.jr-tiny .jr-hud { left: 16px; right: 16px; gap: 3px; }
+.jr-tiny .jr-brand b { font-size: 16px; }
+.jr-tiny .jr-brand small { font-size: 7.5px; }
+.jr-tiny .jr-cap { font-size: 12.5px; }
+.jr-tiny .jr-note { display: none; }
+.jr-tiny .jr-tip { max-width: 190px; padding: 7px 10px 8px; }
+.jr-tiny .jr-tip b { font-size: 12px; }
+.jr-tiny .jr-tip span:not(.k) { font-size: 10.5px; }
+.jr-tiny.open .jr-cap { display: none; }
+.jr-tiny .jr-name { font-size: 24px; }
+.jr-tiny .jr-counts { font-size: 8.5px; letter-spacing: 0.18em; }
+.jr-tiny .jr-prog { font-size: 9.5px; }
+
+/* orbit names, as on the screen: small spaced capitals, white with a glow in the ring's colour */
+.jr-labels { position: absolute; z-index: 2; inset: 0; pointer-events: none; overflow: hidden; }
+.jr-label { position: absolute; left: 0; top: 0; font: 800 9.5px var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: #fff; text-shadow: 0 0 8px var(--c), 0 0 2px var(--c), 0 1px 3px #000; white-space: nowrap; padding: 7px 5px; transition: opacity 0.35s; will-change: transform; opacity: 0; }
+.jr-label.dim { color: rgba(205, 210, 255, 0.62); text-shadow: 0 1px 3px #000; }
+.jr-label:focus-visible { outline: 1px solid var(--c); outline-offset: -2px; border-radius: 4px; }
+.jr-tiny .jr-label { font-size: 8.5px; padding: 6px 4px; letter-spacing: 0.1em; }
+
+/* a picked skill / memory */
+.jr-tip { position: absolute; z-index: 4; left: 0; top: 0; max-width: 230px; padding: 9px 12px 10px; border-radius: 12px; background: rgba(8, 9, 32, 0.84); border: 1px solid color-mix(in srgb, var(--c, #fff) 45%, transparent); box-shadow: 0 0 24px color-mix(in srgb, var(--c, #fff) 25%, transparent), 0 10px 30px rgba(0, 0, 0, 0.5); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); display: flex; flex-direction: column; gap: 2px; pointer-events: none; opacity: 0; transition: opacity 0.25s; }
+.jr-tip.on { opacity: 1; }
+.jr-tip .k { align-self: flex-start; font: 800 8.5px var(--sans); letter-spacing: 0.2em; text-transform: uppercase; padding: 2px 6px; border-radius: 4px; margin-bottom: 2px; }
+.jr-tip .k.skill { background: var(--c); color: #0b0b1e; }
+.jr-tip .k.memory { background: #fff; color: #0b0b1e; }
+.jr-tip b { font-size: 13.5px; font-weight: 700; color: #fff; }
+.jr-tip span:not(.k) { font-size: 11.5px; color: rgba(230, 233, 255, 0.82); font-weight: 600; }
+.jr-tip small { font-size: 9.5px; color: rgba(210, 215, 255, 0.5); font-weight: 600; }
+
+/* ---- dock: back, play, timeline (one row) */
+.jr-back[hidden] { display: none; }
+.jr-play[aria-pressed='true'] { background: rgba(111, 243, 255, 0.14); border-color: rgba(111, 243, 255, 0.6); color: #c4fbff; }
+.jr-narrow ~ .ix-dock .jr-back span, .jr-narrow ~ .ix-dock .jr-play span { display: none; }
+.jr-narrow ~ .ix-dock .jr-back, .jr-narrow ~ .ix-dock .jr-play { width: 44px; padding: 0; }
+.jr-tl { --c: #9fefff; flex: 1 1 220px; max-width: 620px; min-width: 0; padding: 6px 12px 2px; border-radius: 16px; background: rgba(10, 10, 34, 0.7); border: 1px solid rgba(255, 255, 255, 0.14); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+.jr-tl-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 0 2px; }
+.jr-tl small { font-size: 8.5px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 800; color: rgba(246, 243, 238, 0.55); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.jr-date { font: 600 11.5px var(--mono); color: #fff; white-space: nowrap; }
+.jr-track { position: relative; height: 40px; }
+/* thumb is 18px: the rail and every mark run from 9px to (100% - 9px) so they line up with it */
+.jr-months { position: absolute; left: 9px; right: 9px; top: 3px; height: 11px; }
+.jr-months span { position: absolute; left: calc(var(--p) * 100%); transform: translateX(-50%); font: 800 8px var(--sans); letter-spacing: 0.12em; color: rgba(235, 238, 255, 0.72); white-space: nowrap; }
+.jr-months span::after { content: ''; position: absolute; left: 50%; top: 12px; width: 1px; height: 5px; background: rgba(235, 238, 255, 0.45); }
+.jr-months em { font-style: normal; }
+.jr-tl.narrow .jr-months em { display: none; }
+.jr-rail { position: absolute; left: 9px; right: 9px; top: 24px; height: 2px; border-radius: 2px; background: rgba(235, 238, 255, 0.2); }
+.jr-fill { position: absolute; left: 0; top: 0; bottom: 0; width: calc(var(--p, 0) * 100%); border-radius: 2px; background: #fff; box-shadow: 0 0 8px rgba(255, 255, 255, 0.6); }
+.jr-span { position: absolute; top: -3px; bottom: -3px; left: calc(var(--a, 0) * 100%); width: calc((var(--b, 0) - var(--a, 0)) * 100%); min-width: 3px; border-radius: 4px; background: color-mix(in srgb, var(--c, #fff) 45%, transparent); box-shadow: 0 0 12px var(--c, #fff); opacity: 0; transition: opacity 0.4s; }
+.jr.open ~ .ix-dock .jr-span { opacity: 1; }
+.jr-odot { position: absolute; top: 50%; left: calc(var(--p) * 100%); width: 5px; height: 5px; margin: -2.5px 0 0 -2.5px; border-radius: 50%; background: var(--c); opacity: 0.3; transition: opacity 0.3s, transform 0.3s; }
+.jr-odot.on { opacity: 1; box-shadow: 0 0 6px var(--c); }
+.jr.open ~ .ix-dock .jr-odot { opacity: 0.12; box-shadow: none; }
+.jr-ticks { position: absolute; inset: 0; }
+.jr-ticks i { position: absolute; left: calc(var(--p) * 100%); top: -5px; width: 1px; height: 12px; background: rgba(255, 255, 255, 0.55); }
+.jr-ticks i.skill { background: var(--c); height: 14px; top: -6px; }
+.jr-range { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 30px; margin: 0; background: transparent; -webkit-appearance: none; appearance: none; touch-action: none; cursor: pointer; }
+.jr-range::-webkit-slider-runnable-track { height: 30px; background: transparent; }
+.jr-range::-moz-range-track { height: 30px; background: transparent; }
+.jr-range::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; margin-top: 6px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.16), 0 0 14px rgba(255, 255, 255, 0.7); }
+.jr-range::-moz-range-thumb { width: 18px; height: 18px; border: 0; border-radius: 50%; background: #fff; box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.16), 0 0 14px rgba(255, 255, 255, 0.7); }
+.jr-range:focus-visible { outline: none; }
+.jr-range:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 4px rgba(111, 243, 255, 0.6); }
+.jr-months span:first-child { transform: translateX(-9px); }
+.jr-months span:first-child::after { left: 9px; }
+.jr-labels.micro .jr-label { font-size: 7.5px; letter-spacing: 0.06em; padding: 5px 3px; }
+/* short stages (small embedded panels): a one-line brand and a two-line caption */
+.jr-short .jr-hud { gap: 2px; }
+.jr-short .jr-brand { flex-direction: row; align-items: baseline; gap: 8px; }
+.jr-short .jr-brand small { font-size: 7px; letter-spacing: 0.26em; }
+.jr-short .jr-brand b { font-size: 14px; }
+.jr-short .jr-cap { font-size: 11.5px; line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.jr-short .jr-orbit { margin-top: 0; gap: 1px; }
+.jr-short .jr-name { font-size: 20px; }
+.jr-short .jr-prog { display: none; }
+/* small panels: the heading sits on a soft band, so orbit names drifting up under it never collide with the sentence */
+.jr-tiny .jr-hud { left: 0; right: 0; top: 0; padding: 12px 14px 18px; background: linear-gradient(rgba(12, 12, 46, 0.92) 60%, rgba(12, 12, 46, 0)); }

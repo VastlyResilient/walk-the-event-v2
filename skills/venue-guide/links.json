@@ -1,0 +1,102 @@
+{
+ "base": "{BASE}",
+ "stations": {
+  "led-camera-screens": {
+   "hash": "#station-led-camera-screens",
+   "title": "Self Portrait",
+   "artist": "Joshua Wolk",
+   "aliases": [
+    "gilded frames",
+    "portrait screens",
+    "the mirror thing",
+    "camera screens",
+    "Joshua Wolk"
+   ]
+  },
+  "tvs": {
+   "hash": "#station-tvs",
+   "title": "Mandala",
+   "artist": "Kevin Esherick",
+   "aliases": [
+    "wall of TVs",
+    "six screens",
+    "mandala",
+    "sandbox art",
+    "Kevin Esherick"
+   ]
+  },
+  "projector-screens": {
+   "hash": "#station-projector-screens",
+   "title": "The Shape of Everything",
+   "artist": "Jteve Sobs",
+   "aliases": [
+    "projection",
+    "glyph wall",
+    "projector",
+    "Jteve Sobs"
+   ]
+  },
+  "space-screen": {
+   "hash": "#station-space-screen",
+   "title": "Hermes Journey",
+   "artist": "Nous Research",
+   "aliases": [
+    "space screen",
+    "solar system",
+    "Hermes Journey",
+    "touch screen",
+    "orbits"
+   ]
+  },
+  "merch": {
+   "hash": "#station-merch",
+   "title": "The Merch Wall",
+   "artist": null,
+   "aliases": [
+    "merch",
+    "shirts",
+    "tees",
+    "swag",
+    "NOUSCON banner"
+   ]
+  },
+  "cpu-terminals": {
+   "hash": "#station-cpu-terminals",
+   "title": "Persistence 2",
+   "artist": "Morry Kolman",
+   "aliases": [
+    "computers",
+    "terminals",
+    "air-gapped computers",
+    "Persistence 2",
+    "Morry Kolman",
+    "the robot computers"
+   ]
+  }
+ },
+ "floors": {
+  "downstairs": "#floor-down",
+  "upstairs": "#floor-up"
+ },
+ "chapters": {
+  "magenta-mile": "#chapter-magenta-mile",
+  "come-closer": "#chapter-come-closer",
+  "nouscon-corridor": "#chapter-nouscon-corridor",
+  "the-curve": "#chapter-the-curve",
+  "violet-hall": "#chapter-violet-hall",
+  "projection-room": "#chapter-projection-room",
+  "deep-blue": "#chapter-deep-blue",
+  "atrium": "#chapter-atrium",
+  "gallery": "#chapter-gallery",
+  "terminal-row": "#chapter-terminal-row",
+  "into-the-dark": "#chapter-into-the-dark",
+  "blue-ascent": "#chapter-blue-ascent",
+  "beacon-hall": "#chapter-beacon-hall",
+  "night-lounge": "#chapter-night-lounge",
+  "long-corridor": "#chapter-long-corridor",
+  "disco-floor": "#chapter-disco-floor",
+  "violet-gallery": "#chapter-violet-gallery",
+  "plant-room": "#chapter-plant-room",
+  "the-balcony": "#chapter-the-balcony"
+ }
+}

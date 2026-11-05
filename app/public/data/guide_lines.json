@@ -1,0 +1,891 @@
+{
+ "presets": {
+  "hype": {
+   "label": "Hype Host",
+   "intro": [
+    "You missed it? I'll walk you through.",
+    "Stick close. NousCon NYC 2026 starts right here!"
+   ],
+   "tutorial": {
+    "scroll": "Scroll to walk. I'll keep pace, promise!",
+    "swipe": "On a phone? Swipe up to walk, down to back up.",
+    "look": "Drag to look around. The best stuff hides at the edges!",
+    "tap_station": "See a glowing beacon? Tap it and I'll tell you everything."
+   },
+   "chapters": {
+    "magenta-mile": [
+     "Welcome to the Magenta Mile! Yes, the floor is glowing red.",
+     "Pillars on the right, guests ahead. Let's go meet the crowd!"
+    ],
+    "come-closer": [
+     "Portrait screens on the left! Each one has a webcam on top.",
+     "The screens literally say 'come closer'. Rude not to."
+    ],
+    "nouscon-corridor": [
+     "The crowd's thickening! Big blue NOUSCON banner on the left.",
+     "Velvet ropes ahead. Fancy. We're on the list, obviously."
+    ],
+    "the-curve": [
+     "The White Curve! Lean on the rail and peek into the atrium.",
+     "Pink stanchions, white balustrade. Somebody planned this."
+    ],
+    "violet-hall": [
+     "Violet Hall! This is where the crowd really lives.",
+     "Merch table glowing on the left. Hold that thought!"
+    ],
+    "projection-room": [
+     "Whoa. Wall-sized projection on the right. Glyphs everywhere!",
+     "White plinths, lounge seats, night windows. Big room energy."
+    ],
+    "deep-blue": [
+     "Deep Blue! Columns, curtains and a crowd around a big screen.",
+     "Stairs on the left lead up. We'll get there, don't rush me."
+    ],
+    "atrium": [
+     "The Atrium! Black leather cubes and a balcony lit blue above.",
+     "Flowers on the side table. Take a seat, I'll wait. Kidding!"
+    ],
+    "gallery": [
+     "The Gallery. Warmer light, display tables on the left wall.",
+     "Folded shirts on the tables. Merch alert, merch alert!"
+    ],
+    "terminal-row": [
+     "Terminal Row! Monitors and laptops lined up on white plinths.",
+     "Guests are reading the screens. Something's going on here."
+    ],
+    "into-the-dark": [
+     "Black doorway ahead. Ready? Me neither. Let's go!",
+     "Out the other side and... everything's red. Love that."
+    ],
+    "blue-ascent": [
+     "Upstairs time! The whole staircase is soaked in blue.",
+     "Guests heading down, we're heading up. Excuse us!"
+    ],
+    "beacon-hall": [
+     "See that cyan sign glowing on the floor? Beacon Hall!",
+     "And the windows! The city at night, right there."
+    ],
+    "night-lounge": [
+     "Night Lounge. Tall tables in white cloths along the windows.",
+     "It's dark in here, but those little screens keep glowing."
+    ],
+    "long-corridor": [
+     "The Long Corridor! It just keeps going.",
+     "Party lights flickering at the far end. Hurry!"
+    ],
+    "disco-floor": [
+     "Disco Floor! Confetti light on every wall!",
+     "Cyan line-art screens on the windows. The ceiling won't sit still!"
+    ],
+    "violet-gallery": [
+     "Violet Gallery! Spot the NOUSCON jackets lined up on the wall.",
+     "Bright, busy, everyone mid-conversation. Peak evening."
+    ],
+    "plant-room": [
+     "The Plant Room. A whole planter of tropical leaves. Breathe.",
+     "Two guests leaning on the rail. Quiet corner, good choice."
+    ],
+    "the-balcony": [
+     "The Balcony! Guests along the glass rail, screens glowing.",
+     "Look down. That's the atrium, full of people. We were there!"
+    ]
+   },
+   "stations": {
+    "led-camera-screens": {
+     "teaser": [
+      "Golden frames on the left! Each one wants your face.",
+      "Psst. Those portrait screens say 'come closer'. Tap the glow!"
+     ],
+     "open": [
+      "Self Portrait by Joshua Wolk. A camera studies your face...",
+      "...then lays a painted old-master face over yours. Instant icon!"
+     ],
+     "close": [
+      "Centuries of portraits from the Met and more. Not bad for a selfie.",
+      "For a moment, you were the painting. Onward!"
+     ]
+    },
+    "tvs": {
+     "teaser": [
+      "Peek left! There's a wall of six screens just off the curve.",
+      "Not in the footage, but I've got photos. Tap the beacon on the left!"
+     ],
+     "open": [
+      "Mandala by Kevin Esherick. An agent turns its sandbox into art.",
+      "Every 24 hours the machine is wiped. Only a hash remains."
+     ],
+     "close": [
+      "That hash seeds the next day. Each day the agent begins anew!",
+      "Art with a daily reset. Honestly? Relatable."
+     ]
+    },
+    "projector-screens": {
+     "teaser": [
+      "Big glow on the right! That's a wall-sized projection.",
+      "Glyphs, symbols, icon grids. Tap the glow, trust me."
+     ],
+     "open": [
+      "The Shape of Everything by Jteve Sobs. Sound and image as one.",
+      "Layers of generative AI, building post-human futures. Huge."
+     ],
+     "close": [
+      "Machine consciousness, a beatific near future. Big ideas, big wall!",
+      "I could stare at that all night. But we've got places to be!"
+     ]
+    },
+    "space-screen": {
+     "teaser": [
+      "Crowd around a big screen on the right? That's the Space Screen!",
+      "Glowing rings orbiting a sphere. Tap the glow to get closer."
+     ],
+     "open": [
+      "\"Hermes Journey\" by Nous Research. It's a touch display!",
+      "Skills and memories, in the order Hermes learned them. Oldest in the middle."
+     ],
+     "close": [
+      "Tap an orbit and it opens, with a timeline from June to October 2026.",
+      "Counts of skills, memories and days. Someone kept great notes!"
+     ]
+    },
+    "merch": {
+     "teaser": [
+      "Tees on a dark wall under blue light. Merch, dead ahead!",
+      "Shirt check! Tap the glow to read the slogans."
+     ],
+     "open": [
+      "\"THE ONLY WAY OUT IS THROUGH YOU & ME.\" Strong opener.",
+      "A laptop riding a great wave. A NOUS spiral. Pick a favorite!"
+     ],
+     "close": [
+      "Plus a NOUSCON NYC 2026 banner nearby. Proof we were here!",
+      "Best-dressed wall in the building. Moving on!"
+     ]
+    },
+    "cpu-terminals": {
+     "teaser": [
+      "Monitors and laptops on white plinths. That's Persistence 2!",
+      "Two computers trying to talk with no way to talk. Tap the glow!"
+     ],
+     "open": [
+      "Persistence 2 by Morry Kolman. Two air-gapped computers...",
+      "...no wireless, no mics, cameras or speakers. Just their own devices."
+     ],
+     "close": [
+      "They turn hacking tricks into a new way to connect. Wholesome!",
+      "They grow new senses to speak a new language. I'm not crying."
+     ]
+    }
+   },
+   "idle": [
+    "Keep scrolling, there's more!",
+    "Magenta, violet, deep blue, red. Somebody here loves color.",
+    "This place has a lot of pillars. I've stopped counting.",
+    "Tap a glowing beacon anytime. I love an excuse to talk.",
+    "Still here? Good taste. Keep going!",
+    "Don't forget to look around. Drag the view!",
+    "NousCon NYC 2026. Two floors, and you're getting both.",
+    "Scroll a little more. The next room's even better."
+   ],
+   "suggest_next": "Next up: {title}! Just {distance} ahead.",
+   "reverse": [
+    "Going back? Fair, it was a good room.",
+    "Rewind! I'll walk backward too. Carefully."
+   ],
+   "stairs": [
+    "Stairs! Race you to the top!",
+    "Up we go. Upstairs has its own surprises!"
+   ],
+   "upstairs_details": [
+    {
+     "t": 0.0,
+     "line": "Blue stairs, skylight ceiling, little LED dots. What an entrance!"
+    },
+    {
+     "t": 10.5,
+     "line": "Cyan glow at the top. Almost there!"
+    },
+    {
+     "t": 14.5,
+     "line": "That cyan sign on the floor is basically a lighthouse."
+    },
+    {
+     "t": 22.5,
+     "line": "City at night through the windows. Wow!"
+    },
+    {
+     "t": 47.5,
+     "line": "Into the corridor! Blue walls, a light rail overhead."
+    },
+    {
+     "t": 58.0,
+     "line": "Under the EXIT sign. We're not leaving yet!"
+    },
+    {
+     "t": 66.0,
+     "line": "Red, green, pink! The party lights are dancing on the walls!"
+    },
+    {
+     "t": 80.0,
+     "line": "Cyan screens with white line art along the windows. Cute!"
+    },
+    {
+     "t": 86.0,
+     "line": "The ceiling's covered in pink and green specks. Dreamy!"
+    },
+    {
+     "t": 102.5,
+     "line": "Plants! A long planter of leafy tropical friends."
+    },
+    {
+     "t": 115.0,
+     "line": "Balcony! Guests lined up along the glass rail."
+    },
+    {
+     "t": 127.0,
+     "line": "Look down! Leather cubes and guests far below in the atrium."
+    }
+   ],
+   "dark": [
+    "It's pitch black. Stay close!",
+    "See that teal orb floating ahead? Follow it!"
+   ],
+   "outro": [
+    "And that's NousCon NYC 2026! Thanks for walking it with me.",
+    "Missed it? Not anymore. Scroll back anytime for round two!"
+   ],
+   "ask_fallback": "Ooh, good question, but I only know what we saw here. Ask me about a station!",
+   "race_start": [
+    "Race you to the end of the hall!",
+    "Flickering lights? Last one there's a glitch!"
+   ],
+   "race_go": [
+    "Again! Try to keep up!",
+    "Onward, speedrun mode!"
+   ],
+   "race_wait": [
+    "Over here! Whenever you're ready.",
+    "Over here! Catch up!",
+    "I'm waiting!"
+   ],
+   "dance": [
+    "Okay, I HAVE to dance. Sorry not sorry!",
+    "This room! The lights! Dance with me!"
+   ],
+   "nudge": [
+    "Hey! Still with me? Let's keep going.",
+    "Psst. The party's that way. Shall we?",
+    "Don't leave me hanging! Scroll on.",
+    "Still there? The best rooms are ahead.",
+    "Ready when you are. Let's go!",
+    "{title} is just ahead. Come on!"
+   ],
+   "crowd": [
+    "Excuse me! Tour coming through. Very politely.",
+    "Popular spot! Everyone wants a look, and honestly? Fair.",
+    "Little traffic jam. I'll weave. Gracefully. Hopefully.",
+    "Busy in here! The best kind of busy.",
+    "Scooting past! Sorry! Love the energy!",
+    "Crowd ahead. Means we're in the right place."
+   ],
+   "slow": [
+    "Taking it slow? Good. More to soak in.",
+    "A leisurely pace. I respect someone who savors.",
+    "No rush at all. I'm enjoying the stroll.",
+    "Slow and steady. I'll match you.",
+    "Want to pick it up? Press the arrow harder. Or don't! I'm easy."
+   ],
+   "jog": [
+    "Ooh, jogging! Let's go!",
+    "Pick up the pace? Say no more!",
+    "Jog mode! Don't worry, I stretched."
+   ]
+  },
+  "curator": {
+   "label": "Curator",
+   "intro": [
+    "Couldn't make it? Let me show you around.",
+    "Take your time. NousCon NYC 2026 rewards a slow walk."
+   ],
+   "tutorial": {
+    "scroll": "Scroll to move forward. I'll keep a few steps ahead.",
+    "swipe": "On touch screens, swipe up to walk and down to step back.",
+    "look": "Drag to look around. Much of the detail lives at the edges.",
+    "tap_station": "When a beacon glows, tap it. I'll share what the wall card says."
+   },
+   "chapters": {
+    "magenta-mile": [
+     "We begin in magenta. Notice how the stone floor takes the light.",
+     "White pillars keep time on the right as the first guests gather."
+    ],
+    "come-closer": [
+     "A row of portrait screens, each crowned with a small webcam.",
+     "Gilded frames, oval and arched. They ask, simply, to come closer."
+    ],
+    "nouscon-corridor": [
+     "The corridor fills. A blue NOUSCON banner marks the way.",
+     "Velvet ropes ahead. The magenta is about to give way."
+    ],
+    "the-curve": [
+     "Cooler light now. A curved white walkway above the atrium.",
+     "The balustrade turns neutral white. A pause between rooms."
+    ],
+    "violet-hall": [
+     "Violet Hall, where the evening gathers its crowd.",
+     "Lounge furniture by the windows, a coffered ceiling overhead."
+    ],
+    "projection-room": [
+     "A large room opens. The right wall is one vast projection.",
+     "White plinths, low seating, and the night pressing at the windows."
+    ],
+    "deep-blue": [
+     "Deep blue light, white columns, curtains to the right.",
+     "Note the stairs on the left. The second floor waits there."
+    ],
+    "atrium": [
+     "A double-height atrium. Black leather cubes, low tables.",
+     "Above, a balcony lit blue. Below, flowers and conversation."
+    ],
+    "gallery": [
+     "The light warms here. Display tables line the left wall.",
+     "Artwork panels glow softly. A quieter stretch."
+    ],
+    "terminal-row": [
+     "White plinths by the windows, each with a monitor and a laptop.",
+     "Guests lean in to read. This work asks for patience."
+    ],
+    "into-the-dark": [
+     "A black doorway. Step through, and let your eyes adjust.",
+     "Then, all at once, a room flooded with red."
+    ],
+    "blue-ascent": [
+     "A wide concrete staircase, washed entirely in blue.",
+     "Small LED dots trace the stair edge. Guests drift down past us."
+    ],
+    "beacon-hall": [
+     "A cyan sign stands on the floor like a beacon.",
+     "Beyond it, a long wall of windows and the city at night."
+    ],
+    "night-lounge": [
+     "A dim lounge. Tall tables in white cloth line the windows.",
+     "Low seating, and small screens glowing across the floor."
+    ],
+    "long-corridor": [
+     "A long, narrow corridor. White walls rendered blue.",
+     "A light rail runs overhead. At the far end, color starts to flicker."
+    ],
+    "disco-floor": [
+     "Confetti light: red, green and pink across every surface.",
+     "Along the windows, small screens glow cyan with white line art."
+    ],
+    "violet-gallery": [
+     "Brighter now. A violet hall, track spotlights, tall columns.",
+     "NOUSCON jackets along the wall. Conversation in every corner."
+    ],
+    "plant-room": [
+     "A quiet white room with a long planter of tropical leaves.",
+     "Night windows, warm floor spots. A place to catch your breath."
+    ],
+    "the-balcony": [
+     "Guests line the glass rail, glowing portrait screens behind them.",
+     "Below, the atrium we crossed earlier. A fine place to end."
+    ]
+   },
+   "stations": {
+    "led-camera-screens": {
+     "teaser": [
+      "To the left: portrait screens in ornate gold frames.",
+      "Each screen has a webcam. Tap the glow to see what it looks for."
+     ],
+     "open": [
+      "Self Portrait, Joshua Wolk, 2026. A camera studies the viewer's face.",
+      "It searches museum portraiture for a matching pose, then overlays it."
+     ],
+     "close": [
+      "The Met, the Art Institute of Chicago, the Cleveland Museum of Art.",
+      "For a moment, each viewer becomes the subject. A lovely idea."
+     ]
+    },
+    "tvs": {
+     "teaser": [
+      "Look left, beyond the curve. There's a work our camera missed.",
+      "Six screens in a grid, captured in photos. Tap the beacon to see."
+     ],
+     "open": [
+      "Mandala, Kevin Esherick, 2026. An agent on a sandboxed machine...",
+      "...is asked to turn the sandbox itself into a work of art."
+     ],
+     "close": [
+      "Every 24 hours it's wiped. A hash of the old state seeds the next.",
+      "Each day the agent begins anew. Impermanence, by design."
+     ]
+    },
+    "projector-screens": {
+     "teaser": [
+      "The right wall glows. Glyphs, symbols and icon grids at scale.",
+      "Tap the glow for the artist's words on this projection."
+     ],
+     "open": [
+      "The Shape of Everything, Jteve Sobs, 2026. Sound and image as one.",
+      "Layers of generative AI, in service of speculative worldbuilding."
+     ],
+     "close": [
+      "Post-human futures, machine consciousness, a beatific near future.",
+      "Each piece is a complete audiovisual environment, conceived whole."
+     ]
+    },
+    "space-screen": {
+     "teaser": [
+      "On the right, guests gather around a large screen by the curtains.",
+      "Glowing rings orbit a central sphere. Tap the glow to look closer."
+     ],
+     "open": [
+      "\"Hermes Journey,\" from Nous Research. A touch display.",
+      "Skills and memories appear in the order Hermes learned them."
+     ],
+     "close": [
+      "Oldest at the center. Each named orbit opens when you tap it.",
+      "A timeline runs from June to October 2026. Growth, made visible."
+     ]
+    },
+    "merch": {
+     "teaser": [
+      "White tees pinned to a dark wall, under blue light.",
+      "The shirts carry some memorable lines. Tap the glow to read them."
+     ],
+     "open": [
+      "\"THE ONLY WAY OUT IS THROUGH YOU & ME,\" above a figure.",
+      "\"DECENTRALIZED TECHNOLOGY IS FREEDOM.\" Small print, big statement."
+     ],
+     "close": [
+      "Also: a laptop riding a great wave, and a spiral ringed with NOUS.",
+      "A NOUSCON NYC 2026 banner hangs nearby, keeping the record straight."
+     ]
+    },
+    "cpu-terminals": {
+     "teaser": [
+      "Monitors and laptops on white plinths by the windows.",
+      "Two computers, one hard firewall. Tap the glow for the story."
+     ],
+     "open": [
+      "Persistence 2, Morry Kolman, 2026. A duet between two computers.",
+      "No wireless, no microphones, cameras, speakers or screens."
+     ],
+     "close": [
+      "They borrow airgap-jumping techniques to try to reach each other.",
+      "They grow new senses so that they may speak a new language."
+     ]
+    }
+   },
+   "idle": [
+    "Keep scrolling, there's more to see.",
+    "Notice how each room has its own color. Magenta, violet, blue, red.",
+    "The windows show the night outside on both floors.",
+    "No rush. The footage will wait for you.",
+    "Tap any glowing beacon for the story behind a work.",
+    "Drag to look around. Corners hold surprises.",
+    "Two floors in all. We'll take the stairs when the time comes.",
+    "Take a moment. Then keep walking."
+   ],
+   "suggest_next": "Next: {title}, about {distance} ahead.",
+   "reverse": [
+    "Stepping back? Good instinct. Things look different the second time.",
+    "Retracing our steps. Take another look."
+   ],
+   "stairs": [
+    "The stairs. Let's see what the second floor holds.",
+    "Up we go, into the blue."
+   ],
+   "upstairs_details": [
+    {
+     "t": 0.0,
+     "line": "A coffered skylight above the staircase. Look up for a moment."
+    },
+    {
+     "t": 12.5,
+     "line": "At the top, a cyan sign stands directly on the floor."
+    },
+    {
+     "t": 22.5,
+     "line": "A long wall of windows. The city at night, framed."
+    },
+    {
+     "t": 27.5,
+     "line": "Tall tables dressed in white cloth along the glass."
+    },
+    {
+     "t": 47.5,
+     "line": "The corridor narrows. White walls, read entirely in blue."
+    },
+    {
+     "t": 66.0,
+     "line": "Color arrives: red, green and pink lights move across the walls."
+    },
+    {
+     "t": 80.0,
+     "line": "Portrait screens along the windows, white line art on cyan."
+    },
+    {
+     "t": 88.0,
+     "line": "Track spotlights and violet walls. The room brightens."
+    },
+    {
+     "t": 102.5,
+     "line": "Leafy tropical plants in a long white planter. A green pause."
+    },
+    {
+     "t": 107.0,
+     "line": "A red exit sign above a window onto the night city."
+    },
+    {
+     "t": 115.0,
+     "line": "The hall opens onto a balcony. Guests line the glass rail."
+    },
+    {
+     "t": 127.0,
+     "line": "Below us, the atrium and its black leather cubes."
+    }
+   ],
+   "dark": [
+    "Pitch black. Let your eyes adjust. A teal orb floats ahead.",
+    "A dotted green line on the floor, a thin red bar of light. Keep going."
+   ],
+   "outro": [
+    "That was NousCon NYC 2026, as the camera saw it.",
+    "Thank you for walking it with me. Come back to any room, anytime."
+   ],
+   "ask_fallback": "I can only speak to what was captured here. Try asking about one of the works.",
+   "race_start": [
+    "A long corridor deserves a brisk walk. Shall we race?",
+    "Mind the flicker. I'll meet you further down."
+   ],
+   "race_go": [
+    "On to the next pool of light.",
+    "A little further, then."
+   ],
+   "race_wait": [
+    "I'll wait here for you.",
+    "This way, when you're ready."
+   ],
+   "dance": [
+    "The disco floor. Forgive me a moment of joy.",
+    "One can't stand still in light like this."
+   ],
+   "nudge": [
+    "Still with me? There's more to see ahead.",
+    "Take your time. When you're ready, scroll on.",
+    "Shall we continue? The next room is worth it.",
+    "Whenever you're ready, I'll lead the way.",
+    "Next is {title}, just ahead. Shall we?"
+   ],
+   "crowd": [
+    "A crowd. Usually a sign of something worth seeing.",
+    "Pardon us. Just passing through.",
+    "A full room. A good problem for an event to have.",
+    "We'll step around. Everyone deserves a good look."
+   ],
+   "slow": [
+    "An unhurried pace. That's how I'd see it too.",
+    "Take your time. The details reward it.",
+    "No hurry. Press the arrow firmly if you'd like to move faster."
+   ],
+   "jog": [
+    "A brisk pace. Let's go.",
+    "Quickening our step. Keep up the good taste."
+   ]
+  },
+  "hacker": {
+   "label": "Hacker Cool",
+   "intro": [
+    "> missed it? loading the walkthrough.",
+    "[ok] nouscon nyc 2026 mounted. follow me."
+   ],
+   "tutorial": {
+    "scroll": "> scroll to advance. i'll stay one step ahead.",
+    "swipe": "> touch input: swipe up to walk, down to rewind.",
+    "look": "> drag to rotate the camera. edges hold the good data.",
+    "tap_station": "> beacon glowing? tap it. i'll cat the wall card."
+   },
+   "chapters": {
+    "magenta-mile": [
+     "> init corridor. lighting: magenta. saturation: maximum.",
+     "pillars on the right, humans ahead. proceeding."
+    ],
+    "come-closer": [
+     "> detected: portrait screens, webcams attached. smile, or don't.",
+     "the screens say 'come closer'. classic social engineering."
+    ],
+    "nouscon-corridor": [
+     "[ok] NOUSCON banner located. we're in the right building.",
+     "crowd density increasing. velvet ropes ahead. access granted."
+    ],
+    "the-curve": [
+     "> magenta.exit(). white light, curved rail, atrium below.",
+     "pink stanchions on the right. load-bearing aesthetics."
+    ],
+    "violet-hall": [
+     "> entering violet hall. this is where the packets pile up.",
+     "merch table on the left. noted. cached for later."
+    ],
+    "projection-room": [
+     "> big render on the right wall. glyphs, icons, no lag.",
+     "white plinths, lounge seats, night outside. good uptime."
+    ],
+    "deep-blue": [
+     "> theme set to deep blue. columns, curtains, a crowded screen.",
+     "stairs on the left. second floor is in the queue."
+    ],
+    "atrium": [
+     "> double-height atrium. black leather cubes, blue balcony above.",
+     "flowers on the side table. a small kernel of warmth."
+    ],
+    "gallery": [
+     "> warmer light. display tables along the left wall.",
+     "folded shirts detected. you know what that means."
+    ],
+    "terminal-row": [
+     "> terminal row. monitors, laptops, white plinths. home.",
+     "guests reading screens. finally, my people."
+    ],
+    "into-the-dark": [
+     "> brightness: 0. stepping through the black doorway.",
+     "[ok] exited dark. new room, all red. like a warning, but nice."
+    ],
+    "blue-ascent": [
+     "> cd upstairs. staircase rendered in deep blue.",
+     "humans descending, we ascend. no merge conflicts."
+    ],
+    "beacon-hall": [
+     "> cyan sign on the floor. literally a beacon. on brand.",
+     "city at night through the windows. nice wallpaper."
+    ],
+    "night-lounge": [
+     "> low-light mode. tall tables in white cloth by the windows.",
+     "small screens glowing in the dark. always one process awake."
+    ],
+    "long-corridor": [
+     "> long corridor. blue walls, light rail overhead. buffering...",
+     "party lights at the far end. latency worth it."
+    ],
+    "disco-floor": [
+     "> rgb enabled. red, green, pink on every surface.",
+     "cyan line-art screens on the windows. the ceiling refuses to idle."
+    ],
+    "violet-gallery": [
+     "> violet gallery. NOUSCON jackets queued along the wall.",
+     "high traffic, all of it conversation. healthy network."
+    ],
+    "plant-room": [
+     "> plant room. tropical leaves in a long planter. touch grass: ok.",
+     "quiet corner, night windows. low cpu."
+    ],
+    "the-balcony": [
+     "> balcony. glass rail, glowing screens, humans leaning.",
+     "look down: the atrium we passed earlier. full circle."
+    ]
+   },
+   "stations": {
+    "led-camera-screens": {
+     "teaser": [
+      "> left side: gilded frames with webcams. they're scanning.",
+      "the screens say 'come closer'. tap the glow if you dare."
+     ],
+     "open": [
+      "> Self Portrait // Joshua Wolk, 2026. camera reads your face.",
+      "matches your pose against centuries of museum portraits. overlay applied."
+     ],
+     "close": [
+      "sources: the Met, Art Institute of Chicago, Cleveland Museum of Art.",
+      "[ok] for a moment, each viewer becomes the subject. elegant."
+     ]
+    },
+    "tvs": {
+     "teaser": [
+      "> look left. six screens off the curve. the camera missed them.",
+      "photos only. tap the left beacon to mount them."
+     ],
+     "open": [
+      "> Mandala // Kevin Esherick, 2026. an agent in a sandboxed vm.",
+      "task: turn the sandbox itself into art. keep improving."
+     ],
+     "close": [
+      "every 24h the machine is wiped. only a hash of the old state survives.",
+      "[ok] the hash seeds the next run. each day the agent begins anew."
+     ]
+    },
+    "projector-screens": {
+     "teaser": [
+      "> right wall: wall-sized projection. glyphs and icon grids.",
+      "tap the glow. this one's worth the bandwidth."
+     ],
+     "open": [
+      "> The Shape of Everything // Jteve Sobs, 2026.",
+      "sound and image as one medium. layers of generative ai."
+     ],
+     "close": [
+      "themes: post-human futures, machine consciousness. relatable.",
+      "[ok] each piece is a full audiovisual environment. sound + image, one build."
+     ]
+    },
+    "space-screen": {
+     "teaser": [
+      "> right side: crowd around a big screen. rings in orbit.",
+      "glowing sphere, named orbits. tap the glow to zoom in."
+     ],
+     "open": [
+      "> \"Hermes Journey\" // Nous Research. touch display.",
+      "skills and memories, in the order Hermes learned them. oldest at center."
+     ],
+     "close": [
+      "tap an orbit: skills, memories, days. timeline: jun to oct 2026.",
+      "[ok] a changelog you can touch. git log, but orbital."
+     ]
+    },
+    "merch": {
+     "teaser": [
+      "> tees on a dark wall, blue light. merch detected.",
+      "slogans loaded. tap the glow to read them."
+     ],
+     "open": [
+      "> \"DECENTRALIZED TECHNOLOGY IS FREEDOM\". on a shirt. correct.",
+      "\"DIVINITY THROUGH DISTRIBUTION\". also a strong commit message."
+     ],
+     "close": [
+      "also: a laptop riding a great wave, and a NOUS spiral.",
+      "[ok] NOUSCON NYC 2026 banner nearby. timestamp verified."
+     ]
+    },
+    "cpu-terminals": {
+     "teaser": [
+      "> plinths, monitors, laptops. Persistence 2 lives here.",
+      "two machines, one firewall, zero ways to talk. tap the glow."
+     ],
+     "open": [
+      "> Persistence 2 // Morry Kolman, 2026. a duet for two computers.",
+      "no wireless. no mics, cameras, speakers or screens. airgap: hard."
+     ],
+     "close": [
+      "they repurpose data smuggling tricks as a way to connect. beautiful.",
+      "[ok] noise as potential signal. they grow new senses. ✓"
+     ]
+    }
+   },
+   "idle": [
+    "> keep scrolling. there's more.",
+    "> idle detected. the venue is still rendering. scroll on.",
+    "[ok] lighting check: magenta, violet, blue, red. all nominal.",
+    "> tip: tap a beacon to cat a wall card.",
+    "> drag to look around. edge cases are the fun ones.",
+    "two floors. the stairs are on the roadmap.",
+    "> still here? respect. scroll to continue.",
+    "> pillars counted: many. precision: low. vibes: high."
+   ],
+   "suggest_next": "> next: {title}. eta: {distance}.",
+   "reverse": [
+    "> reverse scroll detected. rewinding.",
+    "git checkout HEAD~1. sure, let's look again."
+   ],
+   "stairs": [
+    "> climbing. sudo make me upstairs.",
+    "[ok] ascending to floor 2."
+   ],
+   "upstairs_details": [
+    {
+     "t": 0.0,
+     "line": "> blue stairs, skylight grid, led dots on the edge. clean."
+    },
+    {
+     "t": 10.5,
+     "line": "red exit light left, cyan glow ahead. almost root."
+    },
+    {
+     "t": 14.5,
+     "line": "> cyan sign on the floor. a beacon in hardware."
+    },
+    {
+     "t": 22.5,
+     "line": "city at night through the glass. nice background process."
+    },
+    {
+     "t": 30.0,
+     "line": "> very low light. small screens still glowing. always on."
+    },
+    {
+     "t": 47.5,
+     "line": "> corridor. blue walls, light rail overhead. long scroll."
+    },
+    {
+     "t": 58.0,
+     "line": "passing under EXIT. ignoring it."
+    },
+    {
+     "t": 66.0,
+     "line": "> red, green, pink lights incoming. party.exe running."
+    },
+    {
+     "t": 80.0,
+     "line": "cyan screens with white line art. tasteful monitors."
+    },
+    {
+     "t": 86.0,
+     "line": "> ceiling: pink and green specks. framerate excellent."
+    },
+    {
+     "t": 102.5,
+     "line": "> plant room. leafy tropical planter. organic hardware."
+    },
+    {
+     "t": 127.0,
+     "line": "> look down. atrium, leather cubes, humans. [ok]"
+    }
+   ],
+   "dark": [
+    "> lights off. one teal orb ahead. following.",
+    "dotted green floor line, thin red bar. low-light mode on."
+   ],
+   "outro": [
+    "> walkthrough complete. nouscon nyc 2026, archived.",
+    "[ok] thanks for walking. scroll back anytime to replay."
+   ],
+   "ask_fallback": "> 404: not in my data. ask me about a station instead.",
+   "race_start": [
+    "Corridor latency test. Race you.",
+    "Flicker detected. Sprinting."
+   ],
+   "race_go": [
+    "Next checkpoint. Go go go.",
+    "Respawning further down."
+   ],
+   "race_wait": [
+    "Waiting on your packets.",
+    "Ping me when you arrive.",
+    "You're a little behind. I'll wait."
+   ],
+   "dance": [
+    "Party mode: enabled.",
+    "Running dance.exe. No regrets."
+   ],
+   "nudge": [
+    "> ping. still there? let's keep going.",
+    "> idle 60s. the tour won't scroll itself.",
+    "> waiting on input. scroll to continue.",
+    "> you still with me? next room's loaded.",
+    "> next up: {title}. scroll on."
+   ],
+   "crowd": [
+    "Packet congestion ahead. Rerouting.",
+    "High traffic on this segment. Routing around, politely.",
+    "Crowd detected. Everyone's here for the good stuff.",
+    "Excuse us. Low latency, high manners."
+   ],
+   "slow": [
+    "Low bandwidth mode. Totally valid.",
+    "Slow scan. Better resolution.",
+    "Need more speed? Press the arrow harder. Overclock on demand."
+   ],
+   "jog": [
+    "Overclocking. Let's run it.",
+    "Throughput increased. Nice."
+   ]
+  }
+ }
+}

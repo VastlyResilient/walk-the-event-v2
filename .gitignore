@@ -1,0 +1,36 @@
+node_modules/
+.venv/
+work/
+input/
+tools/
+app/dist/
+.env.local
+*.ply
+qa/runs/*.webm
+.DS_Store
+app/guide-test.html
+app/pod-test.html
+app/export-glb.html
+bin/
+data/solve_*_raw.json
+qa/runs/
+qa/art/**/*.png
+qa/visitor/**/*.png
+qa/shots/*.png
+app/meshy-test.html
+app/meshy-rig-test.html
+app/public/dev/
+.claude/worktrees/
+app/clip-sheet.html
+app/anim-test.html
+# face-blur detector weights (~100 MB, re-downloaded by pipeline/face_detect.py from InsightFace / OpenCV / OpenMMLab)
+pipeline/models/
+__pycache__/
+# QA and launch renders/videos stay local (raw footage frames, not face-blurred)
+launch/*.mp4
+launch/*.png
+qa/**/*.mp4
+qa/**/*.jpg
+qa/**/*.png
+qa/**/*.webm
+qa/**/*.log

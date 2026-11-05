@@ -1,0 +1,1 @@
+{ "name": "walk-the-event-ask", "private": true, "type": "module", "engines": { "node": ">=20" }, "scripts": { "start": "node server.mjs" } }

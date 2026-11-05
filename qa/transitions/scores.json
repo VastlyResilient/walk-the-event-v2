@@ -1,0 +1,234 @@
+{
+  "merch": {
+    "veo-3.1-lite": {
+      "clip": "work/transitions/merch/veo-3.1-lite_2.mp4",
+      "first_frame": 9,
+      "last_frame": 7,
+      "temporal": 6,
+      "display_text": 6,
+      "people": 4,
+      "lighting": 8,
+      "cool": 6,
+      "overall": 4,
+      "notes": "Frames 3-4 of 8 (1.1-1.9s): the blue merch wall slides in as a close panel in front of the crowd, so the room's layout reads wrong. Frames 3-4: the black tee has a blue graphic print that later becomes the plain hand-held shirt (a morph). Frames 4-5 (2.0-2.5s): a disembodied arm grows up from bottom-left and grabs the shirt; a pale hand-like blob also floats at floor level bottom-left at frames 3-4. Lighting ramp from violet to UV-blue is good."
+    },
+    "kling-v3.0-std": {
+      "clip": "work/transitions/merch/kling-v3.0-std_2.mp4",
+      "first_frame": 9,
+      "last_frame": 9,
+      "temporal": 7,
+      "display_text": 7,
+      "people": 7,
+      "lighting": 6,
+      "cool": 8,
+      "overall": 7,
+      "notes": "Long invented route: past the glowing mirror kiosk (frames 4-5 of 8), then a seated woman at a paper-covered table (frame 5), then the merch wall. That is a lot of made-up venue. Frame 6 of 8 (3.5-3.8s): the wall's light jumps from neutral violet to saturated UV-blue in about 8 frames, like a switch flipping. Frames 6-7: the arm on the black tee enters from the left edge, which is plausible. Lands accurately (SSIM 0.945).",
+      "n": 2
+    },
+    "pick": "kling-v3.0-std",
+    "verdict": "fallback",
+    "kling-v3.0-std_reroll": {
+      "n": 3,
+      "clip": "work/transitions/merch/kling-v3.0-std_3.mp4",
+      "first_frame": 9,
+      "last_frame": 10,
+      "temporal": 7,
+      "display_text": 8,
+      "people": 7,
+      "lighting": 6,
+      "cool": 8,
+      "overall": 7,
+      "notes": "Fixes the hand: a woman in grey is now visibly holding the black tee, and the landing is near-exact (SSIM 0.965). The UV-blue on the wall now ramps in gradually. But the light fix didn't hold everywhere: frames 4-5 of 8 (2.7-3.3s) show a new amber/warm-lit glass display case on the left. Frame 5: a fast whip past the bearded man in black (scene peak 0.032 at 3.4s), and the white paper in his hand smears into a blob. Not a cut, but rough."
+    },
+    "n": 3
+  },
+  "led-camera-screens": {
+    "veo-3.1-lite": {
+      "clip": "work/transitions/led-camera-screens/veo-3.1-lite_1.mp4",
+      "first_frame": 9,
+      "last_frame": 5,
+      "temporal": 8,
+      "display_text": 7,
+      "people": 8,
+      "lighting": 9,
+      "cool": 6,
+      "overall": 6,
+      "notes": "Clean dolly and turn with no morphs. But the final frame is misregistered against the hero by about 40px horizontally (SSIM 0.71), so it visibly snaps at the hand-off. The gold-frame screen's live-feed content re-renders over frames 5-8 of 8, which is acceptable for a camera feed. Competent but not exciting."
+    },
+    "kling-v3.0-std": {
+      "clip": "work/transitions/led-camera-screens/kling-v3.0-std_1.mp4",
+      "first_frame": 10,
+      "last_frame": 8,
+      "temporal": 9,
+      "display_text": 8,
+      "people": 8,
+      "lighting": 9,
+      "cool": 7,
+      "overall": 8,
+      "notes": "Smooth continuous walk-and-turn. The background walker in black stays coherent through frames 2-4 of 8. The screens keep their gold and arched frames throughout. The end is well aligned with the hero; the remaining SSIM gap is softness, not offset. Only a small pop between frame 0 and frame 1.",
+      "n": 1
+    },
+    "pick": "kling-v3.0-std",
+    "verdict": "ship",
+    "n": 1
+  },
+  "tvs": {
+    "veo-3.1-lite": {
+      "clip": "work/transitions/tvs/veo-3.1-lite_1.mp4",
+      "first_frame": 8,
+      "last_frame": 6,
+      "temporal": 2,
+      "display_text": 3,
+      "people": 2,
+      "lighting": 7,
+      "cool": 4,
+      "overall": 2,
+      "notes": "Cross-dissolve, not a camera move. Frames 3-5 of 8 (1.5-2.75s): the backpack walker turns translucent and fades out, and a pink floor slab is double-exposed over the stairwell and railing. TV 1 shows a pistol from frame 4 to frame 7, then morphs into the hero's dark image only in the last 0.3s. Largest frame-0 pop of the set (0.08)."
+    },
+    "kling-v3.0-std": {
+      "clip": "work/transitions/tvs/kling-v3.0-std_1.mp4",
+      "first_frame": 8,
+      "last_frame": 8,
+      "temporal": 8,
+      "display_text": 8,
+      "people": 7,
+      "lighting": 6,
+      "cool": 8,
+      "overall": 7,
+      "notes": "Camera convincingly overtakes the backpack walker (frames 2-3 of 8), with slight smearing as she exits left. Frames 4-5 (2.2-2.7s): an amber/orange warm wash on the left ceiling and floor that isn't in the venue palette. The TV wall content matches the hero the whole way (dark image, mandala, map). Noticeable twitch between frame 0 and frame 1 (0.09); trim frame 0.",
+      "n": 1
+    },
+    "pick": "kling-v3.0-std",
+    "verdict": "fallback",
+    "kling-v3.0-std_reroll": {
+      "n": 2,
+      "clip": "work/transitions/tvs/kling-v3.0-std_2.mp4",
+      "first_frame": 8,
+      "last_frame": 8,
+      "temporal": 8,
+      "display_text": 8,
+      "people": 7,
+      "lighting": 5,
+      "cool": 7,
+      "overall": 7,
+      "notes": "Follows the real railing and atrium geography better, and the end aligns well (SSIM 0.879). The no-warm-tones prompt fix failed: frames 4-6 of 8 (2.0-3.3s) show amber-glowing pendant lights and a cream/yellow ceiling, and frames 3-4 show a warm yellow-white atrium void. That's more noticeable than the original's wash. The backpack straps smear as the walker drops out at frame 3. Frame-0 twitch is still 0.087."
+    },
+    "n": 1
+  },
+  "projector-screens": {
+    "veo-3.1-lite": {
+      "clip": "work/transitions/projector-screens/veo-3.1-lite_1.mp4",
+      "first_frame": 8,
+      "last_frame": 5,
+      "temporal": 2,
+      "display_text": 4,
+      "people": 2,
+      "lighting": 8,
+      "cool": 4,
+      "overall": 2,
+      "notes": "Frames 2-3 of 8 (0.8-1.6s): the glyph wall cross-dissolves in over the room, and the two standing women and the man on the left go see-through. Invents extra '000' side panels with rainbow bars at both edges. The end is shifted about 40px and the framing is wider than the hero (SSIM 0.67)."
+    },
+    "kling-v3.0-std": {
+      "clip": "work/transitions/projector-screens/kling-v3.0-std_1.mp4",
+      "first_frame": 9,
+      "last_frame": 8,
+      "temporal": 8,
+      "display_text": 7,
+      "people": 8,
+      "lighting": 8,
+      "cool": 8,
+      "overall": 7,
+      "notes": "Walk plus right pan; the wall is revealed from behind a pillar at frames 3-4 of 8. The two women stay anchored in place, which is good object permanence. Glyphs are mushy around frames 4-5 and settle by frame 6. Prop artifact at frames 4-7: a long white ribbon stretches out from the cube's base and shrinks back to the small white object only at the end.",
+      "n": 1
+    },
+    "pick": "kling-v3.0-std",
+    "verdict": "fallback",
+    "kling-v3.0-std_reroll": {
+      "n": 2,
+      "clip": "work/transitions/projector-screens/kling-v3.0-std_2.mp4",
+      "first_frame": 9,
+      "last_frame": 9,
+      "temporal": 8,
+      "display_text": 8,
+      "people": 8,
+      "lighting": 8,
+      "cool": 8,
+      "overall": 7,
+      "notes": "The no-streaks prompt fix failed: the white ribbon still stretches from the cube's base across frames 3-7 of 8 and only shrinks to the small white object at the end. Everything else improved: glyphs are cleaner and stable from frame 5, the landing is better (SSIM 0.90), and the two women stay anchored."
+    },
+    "n": 2
+  },
+  "space-screen": {
+    "veo-3.1-lite": {
+      "clip": "work/transitions/space-screen/veo-3.1-lite_1.mp4",
+      "first_frame": 9,
+      "last_frame": 6,
+      "temporal": 7,
+      "display_text": 4,
+      "people": 7,
+      "lighting": 9,
+      "cool": 6,
+      "overall": 5,
+      "notes": "Invents a 'YOUR HOROSCOPE / HBMDS JOURNEY' title and purple orbit rings on the screen, then dissolves them away over frames 7-8 of 8 (3.3-4.0s) to match the hero, a visible on-screen morph. The girl in white leaves a little abruptly between frames 1 and 2. Lighting is spot on."
+    },
+    "kling-v3.0-std": {
+      "clip": "work/transitions/space-screen/kling-v3.0-std_1.mp4",
+      "first_frame": 10,
+      "last_frame": 9,
+      "temporal": 8,
+      "display_text": 6,
+      "people": 8,
+      "lighting": 9,
+      "cool": 9,
+      "overall": 7,
+      "notes": "Best 'cool' moment in the set: the woman in the coat walks toward the lens and passes it with her face intact (frames 2-3 of 8), then the camera slips through the green-cap/red-cap crowd. Docked because the screen swaps content twice in frames 3-6: a red/magenta globe, then a blue ring, then the final constellation. That reads as AI rather than UI animation. The top-left title is stable.",
+      "n": 1
+    },
+    "pick": "kling-v3.0-std",
+    "verdict": "ship",
+    "kling-v3.0-std_reroll": {
+      "n": 2,
+      "clip": "work/transitions/space-screen/kling-v3.0-std_2.mp4",
+      "first_frame": 10,
+      "last_frame": 9,
+      "temporal": 9,
+      "display_text": 8,
+      "people": 8,
+      "lighting": 9,
+      "cool": 9,
+      "overall": 8,
+      "notes": "Fix landed: the screen shows the same constellation picture from first reveal (frame 3 of 8) to the end, and the top-left title is stable. The woman in the coat walks at the lens and passes it at frames 2-3 with her face intact. The hoodie and striped-shirt guys stay consistent through the crowd. Only nit: the planet labels are softer than the hero (they read clearly when the photo takes over); the end is well aligned."
+    },
+    "n": 2
+  },
+  "cpu-terminals": {
+    "veo-3.1-lite": {
+      "clip": "work/transitions/cpu-terminals/veo-3.1-lite_1.mp4",
+      "first_frame": 9,
+      "last_frame": 5,
+      "temporal": 5,
+      "display_text": 7,
+      "people": 3,
+      "lighting": 7,
+      "cool": 6,
+      "overall": 3,
+      "notes": "Frames 2-4 of 8 (0.75-2.0s): a dark figure appears from nowhere on the right, translucent and motion-smeared, then walks off; the trio smears into a ghosted blur. A blue sticky note on the plinth face drifts and grows. Terminal text is legible and stable. The end frame is misregistered against the hero (SSIM 0.74)."
+    },
+    "kling-v3.0-std": {
+      "clip": "work/transitions/cpu-terminals/kling-v3.0-std_1.mp4",
+      "first_frame": 10,
+      "last_frame": 10,
+      "temporal": 9,
+      "display_text": 9,
+      "people": 8,
+      "lighting": 8,
+      "cool": 8,
+      "overall": 8,
+      "notes": "Strongest clip. The man in black with arms crossed stays coherent while the camera passes him (frames 3-5 of 8); the woman exits left cleanly. Terminal text and laptop logo hold steady. Violet shifts to neutral white naturally. Lands almost pixel-exact on the hero (SSIM 0.951).",
+      "n": 1
+    },
+    "pick": "kling-v3.0-std",
+    "verdict": "ship",
+    "n": 1
+  }
+}

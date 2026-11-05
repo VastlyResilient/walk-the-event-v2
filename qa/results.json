@@ -1,0 +1,530 @@
+[
+ {
+  "area": "mobile",
+  "check": "first interactive (Start button ready) \u2264 3 s on localhost",
+  "pass": true,
+  "detail": "1.53s"
+ },
+ {
+  "area": "mobile",
+  "check": "WebCodecs path active",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "mobile",
+  "check": "intro: guide visible and talking",
+  "pass": true,
+  "detail": "opacity 1.00"
+ },
+ {
+  "area": "mobile",
+  "check": "swipe up walks forward (slow)",
+  "pass": true,
+  "detail": "0\u2192103"
+ },
+ {
+  "area": "mobile",
+  "check": "swipe up walks forward (medium)",
+  "pass": true,
+  "detail": "103\u2192148"
+ },
+ {
+  "area": "mobile",
+  "check": "swipe up walks forward (fast)",
+  "pass": true,
+  "detail": "148\u2192183"
+ },
+ {
+  "area": "mobile",
+  "check": "swipe down walks backward",
+  "pass": true,
+  "detail": "183\u2192143"
+ },
+ {
+  "area": "mobile",
+  "check": "swipe starting on the speech bubble still walks",
+  "pass": true,
+  "detail": "143\u2192183"
+ },
+ {
+  "area": "mobile",
+  "check": "walk pad (forward) walks forward",
+  "pass": true,
+  "detail": "183\u2192231"
+ },
+ {
+  "area": "mobile",
+  "check": "frame-accurate: shown frame == requested (\u00b10) after settle",
+  "pass": true,
+  "detail": "exact 120/120, max lag 0"
+ },
+ {
+  "area": "mobile",
+  "check": "guide stays on screen when visible",
+  "pass": true,
+  "detail": "0 off-screen of 120 []"
+ },
+ {
+  "area": "mobile",
+  "check": "guide never covers a live station glow (settled)",
+  "pass": true,
+  "detail": "0 settled overlaps []; 5 transient crossings while running to a new spot after a 1.5 s jump"
+ },
+ {
+  "area": "mobile",
+  "check": "speech bubble always on screen",
+  "pass": true,
+  "detail": "0 clipped"
+ },
+ {
+  "area": "mobile",
+  "check": "led-camera-screens: glows only inside its window",
+  "pass": true,
+  "detail": "window 252-525"
+ },
+ {
+  "area": "mobile",
+  "check": "led-camera-screens: card title + body match write-up",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "mobile",
+  "check": "led-camera-screens: back returns to the exact frame",
+  "pass": true,
+  "detail": "cur 388.0 expected 388"
+ },
+ {
+  "area": "mobile",
+  "check": "tvs: glows only inside its window",
+  "pass": true,
+  "detail": "window 1050-1240"
+ },
+ {
+  "area": "mobile",
+  "check": "tvs: card title + body match write-up",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "mobile",
+  "check": "tvs: back returns to the exact frame",
+  "pass": true,
+  "detail": "cur 1145.0 expected 1145"
+ },
+ {
+  "area": "mobile",
+  "check": "projector-screens: glows only inside its window",
+  "pass": true,
+  "detail": "window 1392-1491"
+ },
+ {
+  "area": "mobile",
+  "check": "projector-screens: card title + body match write-up",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "mobile",
+  "check": "projector-screens: back returns to the exact frame",
+  "pass": true,
+  "detail": "cur 1441.0 expected 1441"
+ },
+ {
+  "area": "mobile",
+  "check": "space-screen: glows only inside its window",
+  "pass": true,
+  "detail": "window 1759-1949"
+ },
+ {
+  "area": "mobile",
+  "check": "space-screen: card title + body match write-up",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "mobile",
+  "check": "space-screen: back returns to the exact frame",
+  "pass": true,
+  "detail": "cur 1854.0 expected 1854"
+ },
+ {
+  "area": "mobile",
+  "check": "merch: glows only inside its window",
+  "pass": true,
+  "detail": "window 2297-2507"
+ },
+ {
+  "area": "mobile",
+  "check": "merch: card title + body match write-up",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "mobile",
+  "check": "merch: back returns to the exact frame",
+  "pass": true,
+  "detail": "cur 2402.0 expected 2402"
+ },
+ {
+  "area": "mobile",
+  "check": "cpu-terminals: glows only inside its window",
+  "pass": true,
+  "detail": "window 2641-2765"
+ },
+ {
+  "area": "mobile",
+  "check": "cpu-terminals: card title + body match write-up",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "mobile",
+  "check": "cpu-terminals: back returns to the exact frame",
+  "pass": true,
+  "detail": "cur 2703.0 expected 2703"
+ },
+ {
+  "area": "mobile",
+  "check": "deep link #station-merch",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "mobile",
+  "check": "deep link #chapter-atrium",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "mobile",
+  "check": "deep link #floor-up",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "mobile",
+  "check": "upstairs: guide leads through the floor",
+  "pass": true,
+  "detail": "visible 13/13"
+ },
+ {
+  "area": "mobile",
+  "check": "render FPS median \u2265 55 (headless Chrome, Apple M5 GPU)",
+  "pass": true,
+  "detail": "median 60, 5th pct 60"
+ },
+ {
+  "area": "mobile",
+  "check": "no long tasks > 200 ms while walking",
+  "pass": true,
+  "detail": "0 long tasks, max 0 ms"
+ },
+ {
+  "area": "mobile",
+  "check": "JS heap growth < 60 MB over 20 s walk",
+  "pass": true,
+  "detail": "-62.2 MB"
+ },
+ {
+  "area": "mobile",
+  "check": "network after 20 s walk (streamed per segment)",
+  "pass": true,
+  "detail": "15.4 MB"
+ },
+ {
+  "area": "mobile",
+  "check": "no console errors",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "desktop",
+  "check": "first interactive (Start button ready) \u2264 3 s on localhost",
+  "pass": true,
+  "detail": "0.69s"
+ },
+ {
+  "area": "desktop",
+  "check": "WebCodecs path active",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "desktop",
+  "check": "intro: guide visible and talking",
+  "pass": true,
+  "detail": "opacity 1.00"
+ },
+ {
+  "area": "desktop",
+  "check": "wheel walk forward (slow)",
+  "pass": true,
+  "detail": "0\u219293"
+ },
+ {
+  "area": "desktop",
+  "check": "wheel walk forward (medium)",
+  "pass": true,
+  "detail": "93\u2192203"
+ },
+ {
+  "area": "desktop",
+  "check": "wheel walk forward (fast)",
+  "pass": true,
+  "detail": "203\u2192320"
+ },
+ {
+  "area": "desktop",
+  "check": "wheel walk backward",
+  "pass": true,
+  "detail": "320\u2192225"
+ },
+ {
+  "area": "desktop",
+  "check": "keyboard W walks forward",
+  "pass": true,
+  "detail": "225\u2192289"
+ },
+ {
+  "area": "desktop",
+  "check": "frame-accurate: shown frame == requested (\u00b10) after settle",
+  "pass": true,
+  "detail": "exact 120/120, max lag 0"
+ },
+ {
+  "area": "desktop",
+  "check": "guide stays on screen when visible",
+  "pass": true,
+  "detail": "0 off-screen of 120 []"
+ },
+ {
+  "area": "desktop",
+  "check": "guide never covers a live station glow (settled)",
+  "pass": true,
+  "detail": "0 settled overlaps []; 2 transient crossings while running to a new spot after a 1.5 s jump"
+ },
+ {
+  "area": "desktop",
+  "check": "speech bubble always on screen",
+  "pass": true,
+  "detail": "0 clipped"
+ },
+ {
+  "area": "desktop",
+  "check": "led-camera-screens: glows only inside its window",
+  "pass": true,
+  "detail": "window 252-525"
+ },
+ {
+  "area": "desktop",
+  "check": "led-camera-screens: card title + body match write-up",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "desktop",
+  "check": "led-camera-screens: back returns to the exact frame",
+  "pass": true,
+  "detail": "cur 388.0 expected 388"
+ },
+ {
+  "area": "desktop",
+  "check": "tvs: glows only inside its window",
+  "pass": true,
+  "detail": "window 1050-1240"
+ },
+ {
+  "area": "desktop",
+  "check": "tvs: card title + body match write-up",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "desktop",
+  "check": "tvs: back returns to the exact frame",
+  "pass": true,
+  "detail": "cur 1145.0 expected 1145"
+ },
+ {
+  "area": "desktop",
+  "check": "projector-screens: glows only inside its window",
+  "pass": true,
+  "detail": "window 1392-1491"
+ },
+ {
+  "area": "desktop",
+  "check": "projector-screens: card title + body match write-up",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "desktop",
+  "check": "projector-screens: back returns to the exact frame",
+  "pass": true,
+  "detail": "cur 1441.0 expected 1441"
+ },
+ {
+  "area": "desktop",
+  "check": "space-screen: glows only inside its window",
+  "pass": true,
+  "detail": "window 1759-1949"
+ },
+ {
+  "area": "desktop",
+  "check": "space-screen: card title + body match write-up",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "desktop",
+  "check": "space-screen: back returns to the exact frame",
+  "pass": true,
+  "detail": "cur 1854.0 expected 1854"
+ },
+ {
+  "area": "desktop",
+  "check": "merch: glows only inside its window",
+  "pass": true,
+  "detail": "window 2297-2507"
+ },
+ {
+  "area": "desktop",
+  "check": "merch: card title + body match write-up",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "desktop",
+  "check": "merch: back returns to the exact frame",
+  "pass": true,
+  "detail": "cur 2402.0 expected 2402"
+ },
+ {
+  "area": "desktop",
+  "check": "cpu-terminals: glows only inside its window",
+  "pass": true,
+  "detail": "window 2641-2765"
+ },
+ {
+  "area": "desktop",
+  "check": "cpu-terminals: card title + body match write-up",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "desktop",
+  "check": "cpu-terminals: back returns to the exact frame",
+  "pass": true,
+  "detail": "cur 2703.0 expected 2703"
+ },
+ {
+  "area": "desktop",
+  "check": "deep link #station-merch",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "desktop",
+  "check": "deep link #chapter-atrium",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "desktop",
+  "check": "deep link #floor-up",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "desktop",
+  "check": "upstairs: guide leads through the floor",
+  "pass": true,
+  "detail": "visible 13/13"
+ },
+ {
+  "area": "desktop",
+  "check": "render FPS median \u2265 55 (headless Chrome, Apple M5 GPU)",
+  "pass": true,
+  "detail": "median 60, 5th pct 60"
+ },
+ {
+  "area": "desktop",
+  "check": "no long tasks > 200 ms while walking",
+  "pass": true,
+  "detail": "1 long tasks, max 50 ms"
+ },
+ {
+  "area": "desktop",
+  "check": "JS heap growth < 60 MB over 20 s walk",
+  "pass": true,
+  "detail": "-59.4 MB"
+ },
+ {
+  "area": "desktop",
+  "check": "network after 20 s walk (streamed per segment)",
+  "pass": true,
+  "detail": "15.7 MB"
+ },
+ {
+  "area": "desktop",
+  "check": "no console errors",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "a11y",
+  "check": "reduced motion: station opens instantly (fade, no camera move)",
+  "pass": true,
+  "detail": "0.10s"
+ },
+ {
+  "area": "a11y",
+  "check": "keyboard only: Enter starts, Enter opens live station, Esc closes",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "a11y",
+  "check": "M toggles sound (mute control)",
+  "pass": true,
+  "detail": "True -> False"
+ },
+ {
+  "area": "a11y",
+  "check": "captions always on (every line shows in the speech bubble)",
+  "pass": true,
+  "detail": "bubble is the caption track"
+ },
+ {
+  "area": "map",
+  "check": "map shows all 6 station pins + chapters",
+  "pass": true,
+  "detail": "6 pins"
+ },
+ {
+  "area": "map",
+  "check": "tapping a pin flies into the footage and opens the station",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "stations",
+  "check": "gallery deep link opens the right station",
+  "pass": true,
+  "detail": "Hermes Journey"
+ },
+ {
+  "area": "routes",
+  "check": "map + gallery: no page errors",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "area": "webkit",
+  "check": "WebKit loads, decodes and walks",
+  "pass": true,
+  "detail": "webcodecs=True shown=600 "
+ }
+]

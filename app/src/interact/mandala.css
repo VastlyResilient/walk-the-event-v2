@@ -1,0 +1,138 @@
+/* ================= Mandala ================= */
+.ix .md { background: radial-gradient(120% 70% at 50% 40%, #3a1532 0%, #1c0a1a 50%, #08040a 100%); --md-cream: #f4ecdc; --md-dim: rgba(244, 236, 220, 0.55); --md-green: #8dffb7; --md-amber: #ffcf6b; --md-cyan: #6ff3ff; --md-pink: #ff7ccc; }
+.md-room { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(60% 40% at 50% 46%, rgba(255, 110, 200, 0.16), transparent 70%); }
+.md-wall { position: absolute; display: grid; }
+.md-screen { position: relative; overflow: hidden; border-radius: 5px; background: #040305; container-type: size; font-family: var(--mono); color: var(--md-cream); box-shadow: 0 0 0 3px #0c0b0f, 0 0 0 4px rgba(255, 255, 255, 0.06), 0 14px 34px rgba(0, 0, 0, 0.55), 0 0 50px rgba(255, 90, 190, 0.1); }
+.md-screen.off { display: none; }
+.md-screen::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(125deg, rgba(255, 255, 255, 0.06), transparent 38%), repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.016) 0 1px, transparent 1px 3px); }
+
+/* title bars (a screen legend at the left, like the 2 × 3 legend on the wall's terminal) */
+.md-tbar { position: relative; z-index: 1; display: flex; align-items: center; gap: 6px; width: 100%; height: 22px; padding: 0 8px; font: 600 9px/1 var(--mono); color: var(--md-dim); border: 0; border-bottom: 1px solid rgba(255, 255, 255, 0.07); background: rgba(255, 255, 255, 0.03); text-align: left; cursor: default; }
+.md-tbar b { color: var(--md-green); font-weight: 600; white-space: nowrap; }
+.md-tbar span { margin-left: auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.md-tbar .md-next { display: none; font-style: normal; color: var(--md-cyan); white-space: nowrap; }
+.md-legend { display: grid; grid-template-columns: repeat(3, 4px); grid-template-rows: repeat(2, 3px); gap: 1px; flex: none; }
+.md-legend i { background: rgba(255, 255, 255, 0.18); }
+.md-legend i.on { background: var(--md-cyan); }
+@container (min-width: 300px) { .md-tbar { height: 26px; font-size: 10.5px; padding: 0 11px; } .md-legend { grid-template-columns: repeat(3, 5px); grid-template-rows: repeat(2, 4px); } }
+/* compact panels: one secondary screen at a time; its title bar is a big button to the next one */
+.md-wall[data-mode='side'] .md-tbar, .md-wall[data-mode='stack'] .md-tbar { height: 30px; cursor: pointer; }
+.md-wall[data-mode='side'] .md-tbar::before, .md-wall[data-mode='stack'] .md-tbar::before { content: ''; position: absolute; left: 0; right: 0; top: -6px; bottom: -6px; }
+.md-wall[data-mode='side'] .md-tbar span, .md-wall[data-mode='stack'] .md-tbar span { display: none; }
+.md-wall[data-mode='side'] .md-tbar .md-next, .md-wall[data-mode='stack'] .md-tbar .md-next { display: block; margin-left: auto; }
+.md-tbar:focus-visible { outline: 2px solid var(--md-cyan); outline-offset: -2px; }
+
+/* the mandala */
+.md-s-art { background: #050307; }
+.md-s-art::after { display: none; }
+.md-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: crosshair; touch-action: none; }
+.md-hud { position: absolute; left: 8px; right: 8px; top: 7px; display: none; justify-content: space-between; gap: 8px; font: 600 9.5px/1.2 var(--mono); color: var(--md-dim); pointer-events: none; }
+.md-hud span:first-child { color: var(--md-pink); }
+.md-wall[data-mode='side'] .md-hud, .md-wall[data-mode='stack'] .md-hud { display: flex; }
+.md-wall[data-mode='stack'] .md-hud { right: 54px; } /* clear of the panel's expand button */
+.md-hint { position: absolute; z-index: 2; padding: 3px 8px; border-radius: 999px; background: rgba(4, 3, 5, 0.72); left: 50%; bottom: 8px; transform: translateX(-50%); max-width: calc(100% - 16px); font: 700 9.5px/1.2 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: rgba(111, 243, 255, 0.85); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; pointer-events: none; transition: opacity 0.6s; animation: mdpulse 2.4s ease-in-out infinite; }
+.md-hint.gone, .md.wiping .md-hint, .md.previewing .md-hint { opacity: 0; animation: none; }
+@keyframes mdpulse { 50% { opacity: 0.4; } }
+.md-cap { position: absolute; left: 8px; right: 8px; bottom: 9px; text-align: center; font: 600 10px/1.3 var(--mono); color: var(--md-amber); pointer-events: none; text-shadow: 0 0 10px rgba(0, 0, 0, 0.9); }
+.md-cap:empty { display: none; }
+@container (min-width: 420px) { .md-hint { font-size: 11px; bottom: 12px; } .md-cap { font-size: 12px; bottom: 12px; } }
+.md-ov { position: absolute; left: 8px; right: 8px; bottom: 8px; display: none; align-items: center; gap: 8px; padding: 6px 6px 6px 10px; border-radius: 8px; background: rgba(6, 4, 10, 0.82); border: 1px solid rgba(255, 207, 107, 0.35); }
+.md.previewing .md-ov { display: flex; }
+.md-ov p { flex: 1; margin: 0; font: 500 9.5px/1.35 var(--mono); color: var(--md-cream); }
+.md-back { flex: none; min-height: 40px; padding: 0 12px; border-radius: 999px; font: 700 11px var(--mono); color: #1d0614; background: var(--md-amber); border: 0; cursor: pointer; }
+
+/* the agent's eye */
+.md-eyec { position: absolute; left: 0; right: 0; bottom: 0; top: 26px; width: 100%; height: calc(100% - 26px); display: block; }
+.md-cross { position: absolute; left: 50%; top: calc(50% + 13px); width: 34px; height: 34px; margin: -17px 0 0 -17px; border: 1px solid rgba(255, 207, 107, 0.6); border-radius: 50%; pointer-events: none; }
+.md-cross::before, .md-cross::after { content: ''; position: absolute; background: rgba(255, 207, 107, 0.6); }
+.md-cross::before { left: 50%; top: -8px; bottom: -8px; width: 1px; }
+.md-cross::after { top: 50%; left: -8px; right: -8px; height: 1px; }
+.md-eyelbl { position: absolute; left: 10px; bottom: 8px; font: 600 10px var(--mono); color: var(--md-amber); text-shadow: 0 0 8px #000; }
+
+/* the visitor's memory of past days */
+.md-chain { position: absolute; left: 0; right: 0; top: 22px; bottom: 26px; display: flex; align-items: center; gap: 4px; padding: 6px 10px; overflow-x: auto; overflow-y: hidden; touch-action: pan-x; overscroll-behavior-x: contain; scrollbar-width: none; }
+.md-chain::-webkit-scrollbar { display: none; }
+.md-dcard { flex: none; display: flex; flex-direction: column; align-items: center; gap: 3px; min-width: 44px; min-height: 40px; padding: 4px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.08); background: rgba(255, 255, 255, 0.02); font-family: var(--mono); color: var(--md-cream); cursor: pointer; transition: border-color 0.2s, background 0.2s; }
+.md-dcard canvas { width: min(64px, 44cqh); height: min(64px, 44cqh); border-radius: 50%; display: block; }
+.md-dcard b { font-size: 9.5px; font-weight: 600; color: var(--md-pink); }
+.md-dcard code { font-size: 8.5px; color: var(--md-amber); white-space: nowrap; }
+.md-dcard.live { border-color: rgba(141, 255, 183, 0.4); cursor: default; }
+.md-dcard.live code { color: var(--md-green); }
+.md-dcard.on, .md-dcard:not(.live):hover { border-color: rgba(255, 207, 107, 0.7); background: rgba(255, 207, 107, 0.08); }
+.md-link { flex: none; display: flex; flex-direction: column; align-items: center; font: 600 12px/1 var(--mono); color: var(--md-amber); }
+.md-link i { font: 500 7.5px/1.2 var(--mono); font-style: normal; color: var(--md-dim); }
+.md-memo { position: absolute; left: 10px; right: 10px; bottom: 6px; margin: 0; font: 500 8.5px/1.3 var(--mono); color: rgba(244, 236, 220, 0.45); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@container (min-height: 200px) { .md-memo { white-space: normal; } .md-chain { top: 26px; bottom: 40px; } .md-dcard b { font-size: 11px; } .md-dcard code { font-size: 10px; } }
+@container (min-width: 300px) { .md-chain { top: 26px; } }
+
+/* plan.md (the editor) */
+.md-ed { position: absolute; left: 0; right: 0; top: 22px; bottom: 0; padding: 6px 9px; overflow: hidden; font: 400 clamp(8px, 2.6cqw, 11.5px)/1.45 var(--mono); color: rgba(244, 236, 220, 0.8); }
+.md-ed .c { color: rgba(244, 236, 220, 0.4); }
+.md-ed .k { color: var(--md-pink); margin-top: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.md-plan { list-style: none; margin: 0; padding: 0; }
+.md-plan li { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-left: 1.4em; position: relative; color: rgba(244, 236, 220, 0.5); }
+.md-plan li::before { content: '·'; position: absolute; left: 0.3em; }
+.md-plan li.done { color: rgba(244, 236, 220, 0.35); text-decoration: line-through; text-decoration-color: rgba(244, 236, 220, 0.25); }
+.md-plan li.done::before { content: '✓'; left: 0; color: var(--md-green); }
+.md-plan li.now { color: var(--md-cream); }
+.md-plan li.now::before { content: '▸'; left: 0.1em; color: var(--md-amber); }
+.md-plan li.now.v { color: #c4fbff; }
+.md-plan li.now.v::before { color: var(--md-cyan); }
+.md-ed pre { margin: 2px 0 0; font: inherit; white-space: pre; }
+.md-ed .add { color: var(--md-green); }
+.md-ed .del { color: #ff8a9a; }
+@container (min-width: 300px) { .md-ed { top: 26px; padding: 8px 12px; } }
+
+/* the terminal */
+.md-log { position: absolute; top: 22px; left: 0; right: 0; bottom: 0; overflow: hidden; padding: 5px 9px; font: 400 clamp(8px, 2.5cqw, 11.5px)/1.45 var(--mono); color: rgba(244, 236, 220, 0.78); -webkit-mask-image: linear-gradient(transparent, #000 28%); mask-image: linear-gradient(transparent, #000 28%); display: flex; flex-direction: column; justify-content: flex-end; }
+.md-log div { flex: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.md-log i { font-style: normal; color: rgba(244, 236, 220, 0.3); margin-right: 0.7em; }
+.md-log .cmd { color: var(--md-green); }
+.md-log .ok { color: var(--md-dim); }
+.md-log .hash { color: var(--md-amber); }
+.md-log .v { color: var(--md-cyan); }
+@container (min-width: 300px) { .md-log { top: 26px; padding: 7px 12px; } }
+
+/* state: day, clock, growth, hashes */
+.md-stat-in { position: absolute; top: 22px; left: 0; right: 0; bottom: 0; padding: 6px 10px; display: flex; flex-direction: column; gap: 1px; overflow: hidden; }
+.md-row1 { display: flex; align-items: baseline; justify-content: space-between; gap: 6px; font-size: clamp(9px, 3cqw, 13px); }
+.md-dayn { color: var(--md-pink); font-weight: 700; }
+.md-clock { color: var(--md-dim); }
+.md-stat-in small { font-size: clamp(7.5px, 2.2cqw, 9.5px); letter-spacing: 0.12em; text-transform: uppercase; color: rgba(244, 236, 220, 0.42); margin-top: 3px; }
+.md-cd { font: 600 clamp(16px, min(9cqw, 16cqh), 38px)/1.05 var(--mono); color: var(--md-cream); letter-spacing: 0.02em; text-shadow: 0 0 14px rgba(255, 79, 191, 0.5); }
+.md-spark { width: 100%; height: clamp(14px, 16cqh, 44px); margin-top: 4px; display: block; flex: none; }
+.md-count { font-size: clamp(8.5px, 2.5cqw, 11px); color: rgba(244, 236, 220, 0.7); }
+.md-hashes { display: flex; flex-direction: column; gap: 1px; min-height: 0; }
+.md-stat-in code { font-size: clamp(8px, 2.4cqw, 11px); color: var(--md-amber); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.md-stat-in code.live { color: var(--md-green); transition: color 0.6s; }
+.md-stat-in code.live.flash { animation: mdflash 0.7s ease-out; }
+@keyframes mdflash { 0% { color: #fff; text-shadow: 0 0 10px var(--md-green); } 100% { text-shadow: none; } }
+@container (max-height: 150px) { .md-spark, .md-hashes small:first-child, .md-hashes code:nth-of-type(1) { display: none; } }
+@container (max-height: 118px) { .md-hashes { display: none; } }
+@container (min-width: 300px) { .md-stat-in { top: 26px; padding: 8px 14px; } }
+/* wipe: the state panel turns over in one go */
+.md-s-state.turn .md-stat-in > * { animation: mdturn 0.9s var(--ease); }
+@keyframes mdturn { 0% { filter: brightness(2) drop-shadow(0 0 6px #ffcf6b); } 100% { filter: none; } }
+
+/* the wipe itself */
+/* WebKit dies animating a stacked filter over the screens' canvases, so the glitch is a flashing overlay plus a jitter */
+.md.wiping .md-screen:not(.md-s-days) { animation: mdjolt 0.8s steps(10) both; }
+.md.wiping .md-screen:not(.md-s-days)::before { content: ''; position: absolute; inset: 0; z-index: 3; pointer-events: none; animation: mdglitch 0.8s steps(10) both; }
+@keyframes mdjolt { 20% { transform: translateX(2px); } 40% { transform: translateX(-3px) skewX(2deg); } 65%, 100% { transform: none; } }
+@keyframes mdglitch { 0% { background: transparent; } 20% { background: rgba(190, 255, 240, 0.55); } 40% { background: rgba(0, 0, 0, 0.6); } 65% { background: rgba(235, 235, 235, 0.45); } 85% { background: #000; } 100% { background: transparent; } }
+.md.md-reduced.wiping .md-screen:not(.md-s-days) { animation: none; }
+.md.md-reduced.wiping .md-screen:not(.md-s-days)::before { animation: mdfade 0.8s both; }
+.md-reduced .md-hint { animation: none; }
+@keyframes mdfade { 50% { background: #000; } }
+
+/* dock: how long a day lasts */
+.md-seg { display: inline-flex; align-items: center; gap: 2px; padding: 2px; border-radius: 999px; background: rgba(22, 15, 32, 0.6); border: 1px solid rgba(255, 255, 255, 0.15); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+.md-seg span { padding: 0 6px 0 10px; font: 700 10px var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: rgba(246, 243, 238, 0.55); }
+.md-seg button { min-height: 40px; padding: 0 10px; border-radius: 999px; font-size: 12px; font-weight: 700; color: rgba(246, 243, 238, 0.75); white-space: nowrap; transition: background 0.25s, color 0.25s; }
+.md-seg button[aria-pressed='true'] { background: var(--paper, #f6f3ee); color: var(--ink, #120c18); }
+.md-hint .short { display: none; }
+@container (max-width: 300px) { .md-hint .long { display: none; } .md-hint .short { display: inline; } }
+.md-wall.corner[data-mode='side'] .md-tbar, .md-wall.corner[data-mode='stack'] .md-s-art .md-tbar { padding-right: 68px; }
+.md-wall.corner[data-mode='side'] .md-tbar::before { right: 52px; }
+.md-wall.corner[data-mode='side'] .md-hud { right: 8px; }
+@container (max-width: 240px) { .md-hud { font-size: 8.5px; left: 6px; top: 5px; } .md-hud span:last-child { display: none; } .md-hint { font-size: 8.5px; bottom: 5px; } }

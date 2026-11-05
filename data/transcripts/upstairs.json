@@ -1,0 +1,36 @@
+{
+ "language": "en",
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 29.98,
+   "text": "Thank you.",
+   "no_speech_prob": 0.0
+  },
+  {
+   "start": 30.0,
+   "end": 59.98,
+   "text": "Thank you.",
+   "no_speech_prob": 0.0
+  },
+  {
+   "start": 60.0,
+   "end": 75.88,
+   "text": "epicinch whistle",
+   "no_speech_prob": 0.0
+  },
+  {
+   "start": 75.88,
+   "end": 105.86,
+   "text": "One, two, three, four.",
+   "no_speech_prob": 0.0
+  },
+  {
+   "start": 105.88,
+   "end": 135.86,
+   "text": "One, two, three, four.",
+   "no_speech_prob": 0.0
+  }
+ ],
+ "assessment": "No intelligible speech or announcements. Whisper output is hallucinated filler over crowd murmur and background music (30 s windows, repeated phrases). Treat audio as ambience only."
+}

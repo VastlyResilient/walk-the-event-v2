@@ -1,0 +1,335 @@
+{
+ "video": "downstairs",
+ "fps": 29.97,
+ "duration": 119.09,
+ "method": "2 fps frame review of the tone-mapped master (239 frames)",
+ "beats": [
+  {
+   "t": 0.0,
+   "visible": "Start in a long corridor washed in hot magenta and violet LED light. White walls, square white pillars on the right, polished stone floor glowing red. A cluster of guests far ahead."
+  },
+  {
+   "t": 2.5,
+   "visible": "Walking past the first pillar; a group stands near the far end where blue light leaks in."
+  },
+  {
+   "t": 5.0,
+   "visible": "Approaching the crowd; people in dark clothes chat in the magenta haze."
+  },
+  {
+   "t": 7.0,
+   "visible": "A guest in black walks toward and past the camera on the right; a woman with a phone passes left."
+  },
+  {
+   "t": 10.0,
+   "visible": "Doorway edge on the left; the corridor opens up. Far ahead a row of black portrait screens on stands lines the left wall."
+  },
+  {
+   "t": 12.0,
+   "visible": "Pillars repeat on the right; the screen row grows larger on the left."
+  },
+  {
+   "t": 14.5,
+   "visible": "LED camera screens come into view on the left: tall portrait displays on black stands, each with a small webcam on top."
+  },
+  {
+   "t": 16.0,
+   "visible": "Passing the first screen: an ornate gilded digital frame shows a live camera view of the room."
+  },
+  {
+   "t": 17.5,
+   "visible": "Screens show gold oval and arched frames; small 'come closer' text at top. Backpacks and cables at the stands' feet."
+  },
+  {
+   "t": 19.5,
+   "visible": "Last screens of the row slide by on the left; guests ahead, blue light at the far windows."
+  },
+  {
+   "t": 21.5,
+   "visible": "A final portrait screen with an oval gilded frame passes close on the left."
+  },
+  {
+   "t": 22.5,
+   "visible": "Corridor continues; a pillar on the right, guests walking toward us."
+  },
+  {
+   "t": 24.0,
+   "visible": "A guest with a tote bag crosses left to right in front of the camera."
+  },
+  {
+   "t": 25.0,
+   "visible": "Following a woman with a backpack; a crowd gathers near the windows at the end."
+  },
+  {
+   "t": 27.0,
+   "visible": "Guests walk past; one wears a shirt with a big red heart."
+  },
+  {
+   "t": 28.5,
+   "visible": "A blue 'NOUSCON' banner hangs on the left wall; velvet-rope stanchions ahead."
+  },
+  {
+   "t": 30.5,
+   "visible": "Man in a suit with a tote walks toward us past the NOUSCON banner."
+  },
+  {
+   "t": 32.5,
+   "visible": "Magenta gives way to cooler light: a curved white railing walkway with pink stanchions overlooks a glass-walled atrium."
+  },
+  {
+   "t": 34.0,
+   "visible": "Walking the curve along the white railing; pink rope stanchions on the right, windows full of guests beyond."
+  },
+  {
+   "t": 35.5,
+   "visible": "The light turns neutral white: a bright curved gallery with a white balustrade and a view down into the atrium."
+  },
+  {
+   "t": 37.5,
+   "visible": "Rounding the curve; guests come toward us on the white walkway; violet light grows ahead."
+  },
+  {
+   "t": 39.0,
+   "visible": "The walkway opens into a big blue-violet hall full of people."
+  },
+  {
+   "t": 40.0,
+   "visible": "Following the person with the striped backpack into the crowd; a white rail on the right."
+  },
+  {
+   "t": 41.5,
+   "visible": "Crowd in a violet hall: a woman in a white cap, groups chatting, lounge furniture by the windows."
+  },
+  {
+   "t": 43.0,
+   "visible": "Passing close to guests; a group in plaid and patterned shirts stands to the right."
+  },
+  {
+   "t": 45.0,
+   "visible": "Crowd near a wall on the left where a merch table glows; someone crouches over bags."
+  },
+  {
+   "t": 46.5,
+   "visible": "Coffered white ceiling with violet spots; guests in baseball jerseys."
+  },
+  {
+   "t": 48.0,
+   "visible": "A large room opens: on the right wall a big glowing projection screen; windows at the far end."
+  },
+  {
+   "t": 50.0,
+   "visible": "Projector screens on the right: a wall-sized projection of glyphs and icons, two people standing in front of it."
+  },
+  {
+   "t": 52.0,
+   "visible": "White display plinths in the middle of the room; lounge seating and windows ahead under blue light."
+  },
+  {
+   "t": 54.0,
+   "visible": "Deep blue room: people in long coats on the left, white plinths with objects, low lounge seating by the windows."
+  },
+  {
+   "t": 56.0,
+   "visible": "Panning right across the windows; dark night outside, blue spotlights on the ceiling."
+  },
+  {
+   "t": 58.0,
+   "visible": "Turning left into a darker blue hall: groups standing, a mezzanine above with blue light."
+  },
+  {
+   "t": 60.0,
+   "visible": "Under a big white column; a man in a hat walks toward us looking at his phone."
+  },
+  {
+   "t": 62.5,
+   "visible": "Passing the column; curtains on the right, a crowd under deep blue light."
+  },
+  {
+   "t": 63.5,
+   "visible": "A banner with a large face graphic on the left; two women walk toward us."
+  },
+  {
+   "t": 64.5,
+   "visible": "Two women walk toward the camera; on the right, people crowd around a big screen in front of white curtains (the Space Screen)."
+  },
+  {
+   "t": 66.0,
+   "visible": "Crowd around the Space Screen area; people in jerseys and plaid."
+  },
+  {
+   "t": 67.5,
+   "visible": "Stairs appear on the left leading up; white columns; groups chatting."
+  },
+  {
+   "t": 70.0,
+   "visible": "Passing a column; guests in white tees walk by; an atrium opens ahead."
+  },
+  {
+   "t": 72.5,
+   "visible": "A double-height atrium: black leather cube seats and low tables, a balcony above lit blue with guests along the rail."
+  },
+  {
+   "t": 75.0,
+   "visible": "Walking past black leather cubes and a white side table with flowers; people sitting and talking."
+  },
+  {
+   "t": 77.5,
+   "visible": "A man sits on a leather cube in the foreground; guests stand by the far windows."
+  },
+  {
+   "t": 80.0,
+   "visible": "Leaving the atrium; a man in a teal sweater and a woman chat right in front of us."
+  },
+  {
+   "t": 82.0,
+   "visible": "A warmer white gallery: guests walking, display tables along the left wall."
+  },
+  {
+   "t": 83.5,
+   "visible": "Following a person in a long dark coat; artwork panels glow on the left wall."
+  },
+  {
+   "t": 85.5,
+   "visible": "White gallery with soft amber light at the far end; low tables with folded shirts on the left."
+  },
+  {
+   "t": 87.5,
+   "visible": "A man in a suit with a tote bag walks toward us; a warm-lit room with windows ahead."
+  },
+  {
+   "t": 89.5,
+   "visible": "Entering a quieter white room with tall windows; plinths in the distance."
+  },
+  {
+   "t": 90.5,
+   "visible": "CPU terminals: a row of white plinths along the windows, each with a monitor and a closed laptop; guests reading the screens."
+  },
+  {
+   "t": 92.5,
+   "visible": "Closer to the terminals; a couple embraces near the plinths; warm floor uplight."
+  },
+  {
+   "t": 94.5,
+   "visible": "A circular camera on the wall; guests at the terminal plinths; teal floor light."
+  },
+  {
+   "t": 95.5,
+   "visible": "Turning left into a bright white room with warm floor lighting and big windows."
+  },
+  {
+   "t": 97.0,
+   "visible": "Guests dance and chat in the white room; a dark doorway appears on the left."
+  },
+  {
+   "t": 99.0,
+   "visible": "A man in a white sweater stands in a black doorway."
+  },
+  {
+   "t": 100.5,
+   "visible": "Stepping through the black doorway into darkness."
+  },
+  {
+   "t": 101.5,
+   "visible": "Almost total darkness: a faint red glow on the left and a dotted green floor line."
+  },
+  {
+   "t": 105.0,
+   "visible": "In the dark: a teal glowing orb floats ahead, small points of light, a thin red light bar."
+  },
+  {
+   "t": 110.0,
+   "visible": "Still dark: a red-lit opening appears on the right."
+  },
+  {
+   "t": 113.0,
+   "visible": "Stepping out of the dark into a room flooded with red light."
+  },
+  {
+   "t": 115.0,
+   "visible": "Red room: guests walking, a white sign and screens by the windows, red pools of light on the floor."
+  },
+  {
+   "t": 117.5,
+   "visible": "Red room wide view: windows, guests in the distance, a small cyan screen glowing on the left."
+  }
+ ],
+ "chapters": [
+  {
+   "id": "magenta-mile",
+   "title": "The Magenta Mile",
+   "start": 0.0,
+   "end": 10.0,
+   "blurb": "A corridor drowning in magenta light, white pillars, the first guests."
+  },
+  {
+   "id": "come-closer",
+   "title": "Come Closer",
+   "start": 10.0,
+   "end": 22.5,
+   "blurb": "A row of portrait screens with webcams and gilded digital frames."
+  },
+  {
+   "id": "nouscon-corridor",
+   "title": "NOUSCON Corridor",
+   "start": 22.5,
+   "end": 32.5,
+   "blurb": "The crowd thickens under the blue NOUSCON banner."
+  },
+  {
+   "id": "the-curve",
+   "title": "The White Curve",
+   "start": 32.5,
+   "end": 39.0,
+   "blurb": "A curved white balcony walk with pink stanchions over the atrium."
+  },
+  {
+   "id": "violet-hall",
+   "title": "Violet Hall",
+   "start": 39.0,
+   "end": 47.5,
+   "blurb": "The main crowd, merch and a hall glowing violet."
+  },
+  {
+   "id": "projection-room",
+   "title": "Projection Room",
+   "start": 47.5,
+   "end": 58.0,
+   "blurb": "Wall-sized projections, white plinths and night windows."
+  },
+  {
+   "id": "deep-blue",
+   "title": "Deep Blue",
+   "start": 58.0,
+   "end": 72.0,
+   "blurb": "Columns, curtains and the Space Screen under deep blue light."
+  },
+  {
+   "id": "atrium",
+   "title": "The Atrium",
+   "start": 72.0,
+   "end": 82.0,
+   "blurb": "A double-height lounge of black leather cubes under the balcony."
+  },
+  {
+   "id": "gallery",
+   "title": "The Gallery",
+   "start": 82.0,
+   "end": 90.0,
+   "blurb": "Warm white galleries, wall-mounted screens and quieter corners."
+  },
+  {
+   "id": "terminal-row",
+   "title": "Terminal Row",
+   "start": 90.0,
+   "end": 100.5,
+   "blurb": "White plinths, monitors and laptops by the windows."
+  },
+  {
+   "id": "into-the-dark",
+   "title": "Into the Dark",
+   "start": 100.5,
+   "end": 119.0,
+   "blurb": "A black doorway, a floating teal orb, then a room flooded red. (Outro: too dark to track.)"
+  }
+ ]
+}

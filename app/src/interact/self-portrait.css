@@ -1,0 +1,51 @@
+/* ================= Self Portrait ================= */
+/* Layout is computed in self-portrait.ts from the stage's own size (embedded panel or full screen). */
+.ix .sp { background: radial-gradient(130% 80% at 50% 32%, #3b1a3f 0%, #1f0d22 46%, #0b050c 100%); }
+.sp-wall { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(60% 45% at 50% 40%, rgba(255, 190, 120, 0.1), transparent 70%), linear-gradient(transparent 0 80%, rgba(255, 120, 200, 0.05) 80.2%, rgba(30, 12, 26, 0.85) 81%, #0d070c 100%); }
+.sp-frame { position: absolute; filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.65)); }
+.sp-pic { position: absolute; display: block; overflow: hidden; background: #120b07; }
+.sp-gilt { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
+/* the webcam on top of the screen */
+.sp-cam { position: absolute; z-index: 2; top: -13px; left: 50%; width: 34px; height: 12px; margin-left: -17px; border-radius: 5px; background: linear-gradient(#26262c, #0b0b0e); box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6); display: grid; place-items: center; }
+.sp-cam i { width: 6px; height: 6px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #5c7cff, #0a0d22 70%); }
+.sp-cam::after { content: ''; position: absolute; right: 5px; top: 4.5px; width: 3px; height: 3px; border-radius: 50%; background: #333; }
+.sp.live .sp-cam::after { background: #48ff9a; box-shadow: 0 0 6px #48ff9a; }
+/* "come closer": small and plain, as on the station's screens */
+.sp-prompt { position: absolute; z-index: 3; left: 0; right: 0; text-align: center; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: clamp(11px, calc(var(--fw, 300px) * 0.05), 17px); letter-spacing: 0.08em; color: #fff4dc; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.95), 0 0 2px rgba(0, 0, 0, 0.9); opacity: 0; transition: opacity 0.4s; pointer-events: none; }
+.sp-prompt.on { opacity: 1; animation: spbreathe 2.2s ease-in-out infinite; }
+@keyframes spbreathe { 50% { opacity: 0.5; } }
+.sp-scan { position: absolute; z-index: 3; left: 8%; right: 8%; text-align: center; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: clamp(10px, calc(var(--fw, 300px) * 0.042), 14px); letter-spacing: 0.06em; color: #ffe3a8; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.95); opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+.sp-scan.on { opacity: 1; }
+/* museum label for the matched painting */
+.sp-label { position: absolute; z-index: 2; display: flex; align-items: center; gap: 10px; opacity: 0; transition: opacity 0.4s; color: #f3e6cf; }
+.sp-label.on { opacity: 1; }
+.sp-thumb { flex: none; height: 100%; max-height: 52px; width: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 2px; box-shadow: 0 0 0 1px rgba(214, 170, 86, 0.65), 0 4px 12px rgba(0, 0, 0, 0.5); background: #2a1a10; }
+.sp-text { min-width: 0; flex: 1; }
+.sp-text p, .sp-mus { margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; }
+.sp-title { font-family: var(--serif); font-style: italic; font-size: 14px; line-height: 1.2; color: #fff1d8; }
+.sp-by { font-size: 11px; line-height: 1.35; color: rgba(243, 230, 207, 0.8); font-weight: 600; }
+.sp-mus { font-size: 9.5px; line-height: 1.4; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; color: #d9b36a; text-decoration: none; }
+a.sp-mus[href]:hover { text-decoration: underline; }
+.sp-meta { font-size: 10px; line-height: 1.35; color: rgba(243, 230, 207, 0.5); }
+.sp-label[data-layout='stack'] .sp-meta { display: none; }
+.sp-label[data-layout='side'] { flex-direction: column; align-items: flex-start; gap: 10px; transform: translateY(-50%); }
+.sp-label[data-layout='side'] .sp-thumb { height: auto; width: 96px; max-height: none; }
+.sp-label[data-layout='side'] .sp-text p, .sp-label[data-layout='side'] .sp-mus { white-space: normal; }
+.sp-label[data-layout='side'] .sp-title { font-size: 19px; margin-bottom: 3px; }
+.sp-label[data-layout='side'] .sp-by { font-size: 12.5px; }
+.sp-label[data-layout='side'] .sp-mus { font-size: 10.5px; margin-top: 2px; }
+.sp-label[data-layout='side'] .sp-meta { font-size: 11px; margin-top: 10px; max-width: 32ch; }
+/* dock: frame-shape icons and save, at least 40 px tall */
+.sp-seg button { height: 40px; width: 40px; padding: 0; display: grid; place-items: center; }
+.sp-seg button svg { width: 20px; height: 20px; }
+.sp-seg button[aria-pressed='true'] svg { stroke: var(--ink); }
+.ix-btn.busy { opacity: 0.6; pointer-events: none; }
+.sp-label[data-layout='side'][data-size='s'] { gap: 7px; }
+.sp-label[data-layout='side'][data-size='s'] .sp-thumb { width: 64px; }
+.sp-label[data-layout='side'][data-size='s'] .sp-title { font-size: 14px; }
+.sp-label[data-layout='side'][data-size='s'] .sp-by { font-size: 11px; }
+.sp-label[data-layout='side'][data-size='s'] .sp-mus { font-size: 9px; }
+.sp-label[data-layout='side'][data-size='s'] .sp-meta { font-size: 9.5px; margin-top: 6px; }
+.ix-stage.sp ~ .ix-dock .ix-btn.pink, .ix-stage.sp ~ .ix-dock .ix-btn:first-child { padding: 0 15px; }
+.sp-label[data-tight='true'] .sp-meta { display: none; }
+.sp-label[data-tight='true'][data-size='s'] .sp-thumb { width: 52px; }

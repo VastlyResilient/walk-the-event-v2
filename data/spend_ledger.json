@@ -1,0 +1,177 @@
+[
+ {
+  "t": "2026-10-31 05:22:43",
+  "kind": "image",
+  "model": "google/gemini-3-pro-image",
+  "usd": 0.1392,
+  "note": "mascot reference sheet (input file missing)"
+ },
+ {
+  "t": "2026-10-31 06:13:34",
+  "kind": "video",
+  "model": "google/veo-3.1-lite",
+  "usd": 0.12,
+  "note": "merch transition #1"
+ },
+ {
+  "t": "2026-10-31 06:14:33",
+  "kind": "video",
+  "model": "kwaivgi/kling-v3.0-std",
+  "usd": 0.42,
+  "note": "merch transition #1"
+ },
+ {
+  "t": "2026-10-31 06:16:51",
+  "kind": "video",
+  "model": "google/veo-3.1-lite",
+  "usd": 0.12,
+  "note": "led-camera-screens transition #1"
+ },
+ {
+  "t": "2026-10-31 06:17:41",
+  "kind": "video",
+  "model": "kwaivgi/kling-v3.0-std",
+  "usd": 0.42,
+  "note": "led-camera-screens transition #1"
+ },
+ {
+  "t": "2026-10-31 06:17:42",
+  "kind": "video",
+  "model": "google/veo-3.1-lite",
+  "usd": 0.12,
+  "note": "tvs transition #1"
+ },
+ {
+  "t": "2026-10-31 06:17:51",
+  "kind": "video",
+  "model": "kwaivgi/kling-v3.0-std",
+  "usd": 0.42,
+  "note": "tvs transition #1"
+ },
+ {
+  "t": "2026-10-31 06:17:52",
+  "kind": "video",
+  "model": "google/veo-3.1-lite",
+  "usd": 0.12,
+  "note": "projector-screens transition #1"
+ },
+ {
+  "t": "2026-10-31 06:17:53",
+  "kind": "video",
+  "model": "kwaivgi/kling-v3.0-std",
+  "usd": 0.42,
+  "note": "projector-screens transition #1"
+ },
+ {
+  "t": "2026-10-31 06:17:54",
+  "kind": "video",
+  "model": "google/veo-3.1-lite",
+  "usd": 0.12,
+  "note": "space-screen transition #1"
+ },
+ {
+  "t": "2026-10-31 06:17:55",
+  "kind": "video",
+  "model": "kwaivgi/kling-v3.0-std",
+  "usd": 0.42,
+  "note": "space-screen transition #1"
+ },
+ {
+  "t": "2026-10-31 06:17:56",
+  "kind": "video",
+  "model": "google/veo-3.1-lite",
+  "usd": 0.12,
+  "note": "merch transition #2"
+ },
+ {
+  "t": "2026-10-31 06:18:13",
+  "kind": "video",
+  "model": "kwaivgi/kling-v3.0-std",
+  "usd": 0.42,
+  "note": "merch transition #2"
+ },
+ {
+  "t": "2026-10-31 06:18:14",
+  "kind": "video",
+  "model": "google/veo-3.1-lite",
+  "usd": 0.12,
+  "note": "cpu-terminals transition #1"
+ },
+ {
+  "t": "2026-10-31 06:18:23",
+  "kind": "video",
+  "model": "kwaivgi/kling-v3.0-std",
+  "usd": 0.42,
+  "note": "cpu-terminals transition #1"
+ },
+ {
+  "t": "2026-10-31 06:25:20",
+  "kind": "llm",
+  "model": "nousresearch/hermes-4-405b",
+  "usd": 0.01,
+  "note": "ask proxy smoke test (2 calls)"
+ },
+ {
+  "t": "2026-10-31 06:29:53",
+  "kind": "video",
+  "model": "kwaivgi/kling-v3.0-std",
+  "usd": 0.42,
+  "note": "merch transition #3"
+ },
+ {
+  "t": "2026-10-31 06:29:54",
+  "kind": "video",
+  "model": "kwaivgi/kling-v3.0-std",
+  "usd": 0.42,
+  "note": "tvs transition #2"
+ },
+ {
+  "t": "2026-10-31 06:29:55",
+  "kind": "video",
+  "model": "kwaivgi/kling-v3.0-std",
+  "usd": 0.42,
+  "note": "projector-screens transition #2"
+ },
+ {
+  "t": "2026-10-31 06:30:04",
+  "kind": "video",
+  "model": "kwaivgi/kling-v3.0-std",
+  "usd": 0.42,
+  "note": "space-screen transition #2"
+ },
+ {
+  "t": "2026-11-01 03:38:41",
+  "kind": "image",
+  "model": "google/gemini-3-pro-image-preview",
+  "usd": 0.1378,
+  "note": "A-pose reference #0 for Meshy regen"
+ },
+ {
+  "t": "2026-11-01 03:38:57",
+  "kind": "image",
+  "model": "google/gemini-3-pro-image-preview",
+  "usd": 0.1379,
+  "note": "A-pose reference #1 for Meshy regen"
+ },
+ {
+  "t": "2026-11-02 05:55:45",
+  "kind": "image",
+  "model": "google/gemini-3-pro-image-preview",
+  "usd": 0.1397,
+  "note": "hermes v5 face edit (a)"
+ },
+ {
+  "t": "2026-11-02 05:56:07",
+  "kind": "image",
+  "model": "google/gemini-3-pro-image-preview",
+  "usd": 0.1404,
+  "note": "hermes v5 face edit (b)"
+ },
+ {
+  "t": "2026-11-02 05:57:09",
+  "kind": "image",
+  "model": "google/gemini-3-pro-image-preview",
+  "usd": 0.1406,
+  "note": "hermes v5 face edit (c)"
+ }
+]

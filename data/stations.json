@@ -1,0 +1,180 @@
+{
+ "floor": "downstairs",
+ "source_rule": "Facts come only from the wall cards and photos. Nothing invented.",
+ "stations": [
+  {
+   "id": "led-camera-screens",
+   "label": "LED CAMERA SCREENS",
+   "folder": "led camera screens",
+   "breakdown": "IMG_9284.jpeg",
+   "artist": "Joshua Wolk",
+   "work": "Self Portrait",
+   "year": 2026,
+   "title": "Self Portrait",
+   "one_liner": "A row of digital gilded frames that turn whoever stands before them into an old-master portrait.",
+   "body": "In a row of digital gilded frames, a camera studies the face of whoever stands before it. It searches centuries of portraiture from the Met, the Art Institute of Chicago and the Cleveland Museum of Art for a matching pose and expression, then lays the painted face over the living one. For a moment, each viewer becomes the subject.",
+   "body_source": "verbatim from the wall card (photo IMG_3851)",
+   "highlights": [
+    "Four portrait screens on stands, each with a webcam on top",
+    "Ornate gold frames: rectangular, arched and oval",
+    "Matches your pose and expression against museum portraiture",
+    "On-screen prompt: \"come closer\""
+   ],
+   "photos": [
+    "IMG_3852.jpeg",
+    "IMG_3851.jpeg"
+   ],
+   "hero_photo": "IMG_3852.jpeg",
+   "card_photo": "IMG_3851.jpeg",
+   "video_timestamp": 16.65,
+   "in_video": true
+  },
+  {
+   "id": "tvs",
+   "label": "TVs",
+   "folder": "TVS",
+   "breakdown": "IMG_9290.jpeg",
+   "artist": "Kevin Esherick",
+   "work": "Mandala",
+   "year": 2026,
+   "title": "Mandala",
+   "one_liner": "An agent turns its own sandbox into a work of art, and is wiped clean every 24 hours.",
+   "body": "An agent on a sandboxed virtual machine is instructed to turn the sandbox itself into a work of art, continually expanding and improving on its creation. Every 24 hours, the machine is wiped. Only a hash of the previous state is left behind, serving as the seed for the next. Each day the agent begins anew.",
+   "body_source": "verbatim from the wall card (photo IMG_3858)",
+   "highlights": [
+    "A wall of six screens in a 2 \u00d7 3 grid",
+    "A mandala-like form at the centre, terminal logs alongside",
+    "Wiped every 24 hours; a hash of the old state seeds the next",
+    "Each day the agent begins anew"
+   ],
+   "photos": [
+    "IMG_3856.jpeg",
+    "IMG_3855.jpeg",
+    "IMG_3857.jpeg",
+    "IMG_3858.jpeg"
+   ],
+   "hero_photo": "IMG_3856.jpeg",
+   "card_photo": "IMG_3858.jpeg",
+   "video_timestamp": 39.539,
+   "in_video": false,
+   "note": "Breakdown arrow points off the left edge of the frame from the curved white walkway: the screens themselves were captured only in photos."
+  },
+  {
+   "id": "projector-screens",
+   "label": "Projector Screens",
+   "folder": "Projector Screens",
+   "breakdown": "IMG_9288.jpeg",
+   "artist": "Jteve Sobs",
+   "work": "The Shape of Everything",
+   "year": 2026,
+   "title": "The Shape of Everything",
+   "one_liner": "A wall-sized projection of generative glyphs, sound and image composed as one.",
+   "body": "Jteve Sobs works across sound and moving image, treating them as one medium. Using layers of generative ai, the work centers on speculative worldbuilding, including post-human futures, machine consciousness, and architectures that evoke a beatific vision of the near future. Each piece is composed as a complete audiovisual environment, with sound and image conceived together from the outset.",
+   "body_source": "verbatim from the wall card (photo IMG_3862)",
+   "highlights": [
+    "Wall-sized projection of glyphs, symbols and icon grids",
+    "Sound and image conceived together",
+    "Speculative worldbuilding with layers of generative AI",
+    "Post-human futures and machine consciousness"
+   ],
+   "photos": [
+    "IMG_3859.jpeg",
+    "IMG_3860.jpeg",
+    "IMG_3862.jpeg"
+   ],
+   "hero_photo": "IMG_3859.jpeg",
+   "card_photo": "IMG_3862.jpeg",
+   "clip": "IMG_3861.MOV",
+   "video_timestamp": 48.148,
+   "in_video": true
+  },
+  {
+   "id": "space-screen",
+   "label": "SPACE SCREEN",
+   "folder": "SPACE SCREEN",
+   "breakdown": "IMG_9285.jpeg",
+   "artist": "Nous Research",
+   "work": "Hermes Journey",
+   "year": null,
+   "title": "Hermes Journey",
+   "one_liner": "A touch display that maps what Hermes learned as a glowing solar system of skills and memories.",
+   "body": "A large touch display titled \"Hermes Journey\" (Nous Research). On screen: \"Skills and memories appear in the order Hermes learned them, oldest at the center.\" Glowing rings orbit a central sphere, each labelled with a name. Tap one and it opens into its own orbit, with a count of skills, memories and days, and a timeline running from June to October 2026.",
+   "body_source": "no wall card was photographed; text describes only what is visible on screen in IMG_3842\u2013IMG_3845",
+   "highlights": [
+    "\"NOUS RESEARCH \u00b7 HERMES JOURNEY\" on screen",
+    "Oldest skills and memories at the centre",
+    "Named orbits you can tap to open",
+    "Timeline from June to October 2026",
+    "Labelled \"TOUCH DISPLAY\""
+   ],
+   "photos": [
+    "IMG_3842.jpeg",
+    "IMG_3844.jpeg",
+    "IMG_3843.jpeg",
+    "IMG_3845.jpeg"
+   ],
+   "hero_photo": "IMG_3842.jpeg",
+   "clip": "IMG_3846.MOV",
+   "video_timestamp": 64.464,
+   "in_video": true
+  },
+  {
+   "id": "merch",
+   "label": "MERCH",
+   "folder": "MERCH",
+   "breakdown": "IMG_9286.jpeg",
+   "artist": null,
+   "work": "NousCon merch wall",
+   "year": 2026,
+   "title": "The Merch Wall",
+   "one_liner": "Tees pinned to a dark wall under blue light, with a NOUSCON NYC 2026 banner behind.",
+   "body": "White tees pinned to a dark wall under blue light. One reads \"NOUS RESEARCH\" above a figure and \"THE ONLY WAY OUT IS THROUGH YOU & ME\", with the smaller lines \"DECENTRALIZED TECHNOLOGY IS FREEDOM\" and \"DIVINITY THROUGH DISTRIBUTION\". Another frames a manga-style girl with a headband inside the words \"REBELLION TO TYRANTS IS OBEDIENCE TO GOD.\" Others show a laptop riding a great wave and a spiral ringed with the word \"NOUS\". A \"NOUSCON NYC 2026\" banner hangs nearby.",
+   "body_source": "no wall card; text transcribed from the shirts and banner in IMG_3828\u2013IMG_3838",
+   "highlights": [
+    "\"THE ONLY WAY OUT IS THROUGH YOU & ME\"",
+    "\"REBELLION TO TYRANTS IS OBEDIENCE TO GOD.\"",
+    "A laptop riding a great wave",
+    "A NOUS spiral",
+    "NOUSCON NYC 2026 banner"
+   ],
+   "photos": [
+    "IMG_3828.jpeg",
+    "IMG_3836.jpeg",
+    "IMG_3838.jpeg",
+    "IMG_3834.jpeg",
+    "IMG_3835.jpeg"
+   ],
+   "hero_photo": "IMG_3828.jpeg",
+   "video_timestamp": 83.016,
+   "in_video": true
+  },
+  {
+   "id": "cpu-terminals",
+   "label": "CPU TERMINALS",
+   "folder": "CPU TERMINALS",
+   "breakdown": "IMG_9287.jpeg",
+   "artist": "Morry Kolman",
+   "work": "Persistence 2",
+   "year": 2026,
+   "title": "Persistence 2",
+   "one_liner": "Two air-gapped computers try to learn to talk to each other using only their own bodies.",
+   "body": "Persistence 2 is a duet performance where two computers with extremely limited networking capabilities attempt to establish a means of communicating with each other. Kept separate by a hard firewall, banned from any wireless connectivity, and without access to common means of emitting and receiving information such as microphones, cameras, speakers, and screens, viewers can watch as these computers turn to the only means of outreach they have left: their (quite literal) own devices. Leveraging agent skills loaded with data smuggling and airgap jumping techniques from state of the art security research, the computers attempt to turn adversarial exfiltration and hacking methods into a new means of connection. They must emit and they must listen; they must take the arbitrary noise around them as potential signal, while also understanding how their own lossy communication may be interpreted by their counterpart; they grow new senses so that they may speak a new language.",
+   "body_source": "verbatim from the wall card (photo IMG_9270)",
+   "highlights": [
+    "Two computers, a hard firewall, no wireless",
+    "No microphones, cameras, speakers or screens to talk through",
+    "Agent skills built on airgap-jumping security research",
+    "On screen: a Hermes agent hardening a thermal \"flare\" detector",
+    "Status bar: \"Establish contact to share and decrypt messages\""
+   ],
+   "photos": [
+    "IMG_3827.jpeg",
+    "IMG_9270.jpeg"
+   ],
+   "hero_photo": "IMG_3827.jpeg",
+   "card_photo": "IMG_9270.jpeg",
+   "video_timestamp": 91.091,
+   "in_video": true
+  }
+ ]
+}

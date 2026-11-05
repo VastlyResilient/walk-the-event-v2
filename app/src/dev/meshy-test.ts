@@ -1,0 +1,28 @@
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
+const q = new URLSearchParams(location.search);
+const url = q.get('url') || '/dev/meshy-source.glb';
+const yaw = parseFloat(q.get('yaw') || '0');
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setSize(innerWidth, innerHeight);
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+scene.add(new THREE.HemisphereLight(0xffffff, 0x443355, 2.2));
+const d = new THREE.DirectionalLight(0xffffff, 1.4); d.position.set(1, 2, 3); scene.add(d);
+const cam = new THREE.PerspectiveCamera(30, innerWidth / innerHeight, 0.05, 50);
+const g = await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync(url);
+const m = g.scene;
+const box = new THREE.Box3().setFromObject(m); const size = box.getSize(new THREE.Vector3()); const c = box.getCenter(new THREE.Vector3());
+m.position.sub(c);
+scene.add(m);
+const r = size.y * 2.1;
+cam.position.set(Math.sin(yaw) * r, size.y * 0.1, Math.cos(yaw) * r);
+cam.lookAt(0, 0, 0);
+let mixer: THREE.AnimationMixer | null = null;
+const clipName = q.get('clip');
+if (g.animations.length) { mixer = new THREE.AnimationMixer(m); const c = (clipName && g.animations.find((a) => a.name === clipName)) || g.animations[0]; mixer.clipAction(c).play(); const tt = parseFloat(q.get('t') || '0'); if (tt) mixer.update(tt); }
+const clock = new THREE.Clock();
+renderer.setAnimationLoop(() => { mixer?.update(clock.getDelta()); renderer.render(scene, cam); });
+(window as any).__info = { size: size.toArray(), anims: g.animations.map((a) => a.name) };
